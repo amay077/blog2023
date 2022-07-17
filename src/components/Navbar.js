@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
+import twitter from "../img/social/twitter.svg";
 import logo from "../img/logo.svg";
 
 const Navbar = class extends React.Component {
@@ -63,26 +64,26 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
+              {/* <Link className="navbar-item" to="/products">
+                Products
+              </Link> */}
+              <Link className="navbar-item" to="/posts">
+                Blog
+              </Link>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
+              {/* <Link className="navbar-item" to="/contact">
                 Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              </Link> */}
+              {/* <Link className="navbar-item" to="/contact/examples">
                 Form Examples
-              </Link>
+              </Link> */}
             </div>
-            <div className="navbar-end has-text-centered">
+            <div className="navbar-end has-text-centered">              
               <a
                 className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                href="https://github.com/amay077"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -90,7 +91,20 @@ const Navbar = class extends React.Component {
                   <img src={github} alt="Github" />
                 </span>
               </a>
+
+              <a
+                className="navbar-item"
+                href="https://twitter.com/amay077"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={twitter} alt="Twitter" />
+                </span>
+              </a>
+
             </div>
+            
           </div>
         </div>
       </nav>

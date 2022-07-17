@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Experiments Never Fail
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: try and try again
 mainpitch:
   title: Why Kaldi
   description: >

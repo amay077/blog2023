@@ -19,7 +19,7 @@ class BlogRollTemplate extends React.Component {
                 }`}
               >
                 <header>
-                  {post.frontmatter.featuredimage ? (
+                  {/* {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
@@ -34,7 +34,7 @@ class BlogRollTemplate extends React.Component {
                         }}
                       />
                     </div>
-                  ) : null}
+                  ) : null} */}
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
@@ -42,7 +42,7 @@ class BlogRollTemplate extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
+                    <span></span>
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
@@ -84,7 +84,7 @@ export default function BlogRoll() {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 400)
+                excerpt(pruneLength: 200)
                 id
                 fields {
                   slug
@@ -92,7 +92,7 @@ export default function BlogRoll() {
                 frontmatter {
                   title
                   templateKey
-                  date(formatString: "MMMM DD, YYYY")
+                  date(formatString: "YYYY/MM/DD HH:mm:ss")
                   featuredpost
                   featuredimage {
                     childImageSharp {
