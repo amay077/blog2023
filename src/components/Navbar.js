@@ -7,7 +7,6 @@ import useSiteMetadata from "./SiteMetadata";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    console.log(`constructor ~ props`, props);
     super(props);
     this.state = {
       active: false,
