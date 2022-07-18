@@ -2,13 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import dayjs from 'dayjs'
+import timezone from "dayjs/plugin/timezone";
+import utc from "dayjs/plugin/utc";
+
+dayjs.extend(timezone);
+dayjs.extend(utc);
 
 class BlogRollTemplate extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
+    // const now = dayjs(post.frontmatter.date).toISOString()
+
     return (
+
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
@@ -44,7 +53,7 @@ class BlogRollTemplate extends React.Component {
                     </Link>
                     <span></span>
                     <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
+                      {dayjs(post.frontmatter.date).tz('Asia/Tokyo').format('YYYY-MM-DD HH:mm:ss')}
                     </span>
                   </p>
                 </header>
@@ -92,7 +101,7 @@ export default function BlogRoll() {
                 frontmatter {
                   title
                   templateKey
-                  date(formatString: "YYYY/MM/DD HH:mm:ss")
+                  date
                   featuredpost
                   featuredimage {
                     childImageSharp {
