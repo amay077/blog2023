@@ -3,9 +3,11 @@ import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
 import twitter from "../img/social/twitter.svg";
 import logo from "../img/logo.svg";
+import useSiteMetadata from "./SiteMetadata";
 
 const Navbar = class extends React.Component {
   constructor(props) {
+    console.log(`constructor ~ props`, props);
     super(props);
     this.state = {
       active: false,
@@ -43,7 +45,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+              {/* <img src={logo} alt="Kaldi" style={{ width: "88px" }} /> */}
+              {this.props.title}
             </Link>
             {/* Hamburger menu */}
             <div

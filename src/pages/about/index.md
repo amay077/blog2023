@@ -1,7 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: About me
 ---
 名前:amay077(あめいと読むらしいぞ)
 
