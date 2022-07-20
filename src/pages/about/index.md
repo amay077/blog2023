@@ -1,5 +1,5 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About me
 ---
@@ -17,7 +17,8 @@ Build Insider にて、 [Xamarin逆引きTips](http://www.buildinsider.net/mobil
 
 ## 経歴的な
 
-<!-- [こちらへ](/job_history/index.html) -->
+<!-- \[こちらへ](/job_history/index.html) -->
+
 under construction
 
 ## BOOKS(共著)
@@ -57,19 +58,21 @@ under construction
 
 ほぼいつも居ます。
 
-* [https://twitter.com/amay077](https://twitter.com/amay077)
+* <https://twitter.com/amay077>
 
-### Qiita
+### Tech Blogs
 
 Xamarin や Android などの開発ネタを投稿してます。
 
-* [http://qiita.com/amay077](http://qiita.com/amay077)
+* Qiita - <http://qiita.com/amay077>
+* Zenn - https://zenn.dev/amay077
+* dev.io - https://dev.to/amay077
 
 ### GitHub
 
 自作OSSプログラムやサンプルコードなどを公開してます。
 
-* [https://github.com/amay077](https://github.com/amay077)
+* <https://github.com/amay077>
 
 ### Q&Aサイト
 
