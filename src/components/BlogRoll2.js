@@ -7,18 +7,10 @@ import utc from "dayjs/plugin/utc";
 dayjs.extend(timezone);
 dayjs.extend(utc);
 
-const BlogRoll2 = class extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const { posts } = this.props;
-    return (
-
-      <div className="columns is-multiline">
-      {posts && posts.map(({ node: post }) => (
-        <div className="is-parent column is-6" key={post.id}>
+export const BlogRoll2 = ({ posts }) => (
+  <div className="columns is-multiline">
+    {posts && posts.map(({ node: post }) => (
+      <div className="is-parent column is-6" key={post.id}>
         <article
           className={`blog-list-item tile is-child box notification ${
             post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -49,9 +41,9 @@ const BlogRoll2 = class extends React.Component {
         </article>
         </div>
       ))}
-      </div>
-    );
-  }
-};
+  </div>
+);
+
+
 
 export default BlogRoll2;

@@ -9,6 +9,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(limit: 1000) {
+        totalCount
         edges {
           node {
             id
@@ -45,6 +46,20 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
+
+    const PerPage = 20
+    const pageCount = Math.ceil(result.data.allMarkdownRemark.totalCount / PerPage)
+  
+    for (let i = 0; i < pageCount; i++) {
+      createPage({
+        path: `/posts/page/${i + 1}`,
+        component: path.resolve("src/pages/posts/index.js"),
+        context: {
+          limit: PerPage,
+          skip: i * PerPage,
+        },
+      })
+    }    
 
     // Tag pages:
     let tags = []
