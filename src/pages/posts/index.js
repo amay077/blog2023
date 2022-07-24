@@ -6,8 +6,7 @@ import Pagination from "../../components/Pagination";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
-export const BlogIndexPage = ({ data }) => {
-  console.log(`BlogIndexPage ~ data`, data);
+export const BlogIndexPage = ({ data, pageContext }) => {
   const { edges: posts } = data.allMarkdownRemark
   const { totalCount } = data.allMarkdownRemark
 
@@ -35,7 +34,7 @@ export const BlogIndexPage = ({ data }) => {
         <div className="container">
           <div className="content">
             <BlogRoll2 posts={posts} />
-            <Pagination size={20} totalCount={totalCount} />
+            <Pagination page={pageContext.page ?? 1} size={20} totalCount={totalCount} />
           </div>
         </div>
       </section>

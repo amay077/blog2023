@@ -55,6 +55,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: `/posts/page/${i + 1}`,
         component: path.resolve("src/pages/posts/index.js"),
         context: {
+          page: i + 1,
           limit: PerPage,
           skip: i * PerPage,
         },
