@@ -35,6 +35,11 @@ Netlify CMS のそれは古き良き「画像管理機能に画像ファイル�
 この投稿も、Netlify CMS のエディタを **使っていない。**
 この時点で CMS 導入する意味なくね？とも思える。
 
+ちなみにコレは GitHub の Web エディタで書いているのだが、画像をコピペで貼るテストをしてみる。
+
+![image](https://user-images.githubusercontent.com/401369/213150997-3de0a639-62ce-4d9c-bbeb-5fdecf290162.png)
+
+
 
 
 
