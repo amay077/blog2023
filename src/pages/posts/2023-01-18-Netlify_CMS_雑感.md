@@ -5,6 +5,11 @@ date: 2023-01-18T13:48:55.941Z
 description: CMS としての機能がいまいち。
 featuredpost: false
 featuredimage: /img/apple-touch-icon.png
+tags:
+  - CMS
+  - Netlify
+  - Markdown
+  - SSG
 ---
 
 Blog なんて Markdown で書いて GitHub に Push → Actions で SSG かませばいいじゃん？
