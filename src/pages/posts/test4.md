@@ -9,7 +9,7 @@ tags:
   - Twitter
 ---
 
-AAABBB
+AAABBBCCC
 [Twitter、「開発者契約」を密かに改定し、公式にサードパーティアプリを禁止 - ITmedia NEWS](https://www.itmedia.co.jp/news/articles/2301/20/news101.html)
 
 これまでほぼサードパーティクライアントを使ってきました。以下にその遍歴を記し、開発者の皆さまへ御礼申し上げます。
