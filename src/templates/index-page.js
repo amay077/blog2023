@@ -27,9 +27,6 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Latest posts
-                    </h3>
                     <BlogRoll2 posts={posts} />
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/posts">

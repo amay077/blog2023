@@ -40,13 +40,16 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@amay077" />
+        <meta name="twitter:player" content="@amay077" />        
       </Helmet>
       <Navbar title={title}></Navbar>
       <div>{children}</div>
