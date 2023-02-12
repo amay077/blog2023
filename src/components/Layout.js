@@ -10,7 +10,7 @@ const TemplateWrapper = ({ children }) => {
     return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="ja" />
         <title>{title}</title>
         <meta name="description" content={description} />
 
@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:image" content={`${origin}/img/og-image.jpg`} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@amay077" />
       </Helmet>
       <Navbar title={title}></Navbar>
