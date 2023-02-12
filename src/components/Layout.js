@@ -5,10 +5,12 @@ import Navbar from "../components/Navbar";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import { useLocation } from '@reach/router';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  return (
+  const { origin, href } = useLocation();  
+    return (
     <div>
       <Helmet>
         <html lang="en" />
@@ -42,14 +44,10 @@ const TemplateWrapper = ({ children }) => {
 
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
-        <meta
-          property="og:image"
-          content={`${withPrefix("/")}img/og-image.jpg`}
-        />
+        <meta property="og:url" content={`${href}`} />
+        <meta property="og:image" content={`${origin}/img/og-image.jpg`} />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@amay077" />
-        <meta name="twitter:player" content="@amay077" />        
       </Helmet>
       <Navbar title={title}></Navbar>
       <div>{children}</div>
