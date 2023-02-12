@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Experiments Never Fail",
-    description:
-      "amay077's site",
+    description: "amay077's site",
+    origin: "https://blog.amay077.net",    
   },
   plugins: [
     "gatsby-plugin-react-helmet",
