@@ -6,9 +6,9 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description, origin } = useSiteMetadata();
+    const { title, description, origin } = useSiteMetadata();
     const pageTitle = children?.props?.title ?? 'no title';
-    const excerpt = children?.props?.excerpt ?? 'no desc';
+    const excerpt = children?.props?.excerpt ?? description ?? 'no desc';
     console.log(`TemplateWrapper ~ excerpt`, excerpt);
 
     return (
@@ -16,7 +16,7 @@ const TemplateWrapper = ({ children }) => {
       <Helmet>
         <html lang="ja" />
         <title>{title}</title>
-        <meta name="description" content={`${description ?? excerpt}`} />
+        <meta name="description" content={`${excerpt}`} />
 
         <link
           rel="apple-touch-icon"
@@ -43,9 +43,10 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta name="theme-color" content="#fff" />
 
+        <meta property="og:site_name" content={`${title}`} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={`${pageTitle} - ${title}`} />
-        <meta property="og:description" content={`${description ?? excerpt}`} />
+        <meta property="og:description" content={`${excerpt}`} />
         <meta property="og:image" content={`${origin}/img/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@amay077" />
