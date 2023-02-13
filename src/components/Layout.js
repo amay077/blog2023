@@ -7,6 +7,8 @@ import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description, origin } = useSiteMetadata();
+    const pageTitle = children.props.title;
+
     return (
     <div>
       <Helmet>
@@ -40,7 +42,7 @@ const TemplateWrapper = ({ children }) => {
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={`${pageTitle} - ${title}`} />
         <meta property="og:image" content={`${origin}/img/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@amay077" />
