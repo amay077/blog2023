@@ -10,7 +10,6 @@ import useSiteMetadata from "../components/SiteMetadata";
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
   content,
-  excerpt,
   contentComponent,
   description,
   tags,
@@ -72,10 +71,6 @@ const BlogPost = ({ data }) => {
         helmet={
           <Helmet titleTemplate={`%s | ${siteTitle}`}>
             <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -98,7 +93,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
-      excerpt(pruneLength: 100)
+      excerpt(pruneLength: 200)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
