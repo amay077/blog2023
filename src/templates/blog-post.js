@@ -5,10 +5,12 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import useSiteMetadata from "../components/SiteMetadata";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
   content,
+  excerpt,
   contentComponent,
   description,
   tags,
@@ -57,15 +59,18 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
+  const siteMetadata = useSiteMetadata();
+  const siteTitle = siteMetadata.title;
 
   return (
     <Layout>
       <BlogPostTemplate
         content={post.html}
+        excerpt={post.excerpt}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate={`%s | ${siteTitle}`}>
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -93,6 +98,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      excerpt(pruneLength: 200)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title

@@ -8,13 +8,15 @@ import { withPrefix } from "gatsby";
 const TemplateWrapper = ({ children }) => {
   const { title, description, origin } = useSiteMetadata();
     const pageTitle = children.props.title;
+    const excerpt = children.props.excerpt;
+    console.log(`TemplateWrapper ~ excerpt`, excerpt);
 
     return (
     <div>
       <Helmet>
         <html lang="ja" />
         <title>{title}</title>
-        <meta name="description" content={description} />
+        <meta name="description" content={`${description ?? excerpt}`} />
 
         <link
           rel="apple-touch-icon"
@@ -43,6 +45,7 @@ const TemplateWrapper = ({ children }) => {
 
         <meta property="og:type" content="article" />
         <meta property="og:title" content={`${pageTitle} - ${title}`} />
+        <meta property="og:description" content={`${description ?? excerpt}`} />
         <meta property="og:image" content={`${origin}/img/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@amay077" />
