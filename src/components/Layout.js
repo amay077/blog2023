@@ -7,8 +7,8 @@ import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description, origin } = useSiteMetadata();
-    const pageTitle = children.props.title;
-    const excerpt = children.props.excerpt;
+    const pageTitle = children?.props?.title ?? 'no title';
+    const excerpt = children?.props?.excerpt ?? 'no desc';
     console.log(`TemplateWrapper ~ excerpt`, excerpt);
 
     return (
