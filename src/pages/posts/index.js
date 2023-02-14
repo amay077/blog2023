@@ -30,7 +30,7 @@ export const BlogIndexPage = ({ data, pageContext }) => {
           Latest Posts
         </h1>
       </div>
-      <section className="section">
+      <section className="">
         <div className="container">
           <div className="content">
             <BlogRoll2 posts={posts} />
@@ -72,6 +72,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date
+            tags
             featuredpost
             featuredimage {
               childImageSharp {

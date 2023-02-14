@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import dayjs from 'dayjs'
 import timezone from "dayjs/plugin/timezone";
 import utc from "dayjs/plugin/utc";
+import { kebabCase } from "lodash";
 
 dayjs.extend(timezone);
 dayjs.extend(utc);
@@ -26,9 +27,19 @@ export const BlogRoll2 = ({ posts }) => {
                 {post.frontmatter.title}
               </Link>
               <span></span>
-              <span className="subtitle is-block">
-                {dayjs(post.frontmatter.date).format('YYYY/MM/DD HH:mm:ss')}
-              </span>
+
+              <div  class="columns is-mobile" style={{ fontSize: '0.9em', marginBottom: '0.2rem', marginTop: '0.5rem' }}>
+                <div class="column"  style={{ display: 'flex', flexDirection: 'row', gap: '1rem', paddingTop: '0', paddingBottom: '0' }}>
+                  {(post.frontmatter?.tags ?? []).map((tag) => (
+                      <span>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+                      </span>
+                  ))}
+                </div>
+                <div class="column" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'end', paddingTop: '0', paddingBottom: '0' }}>
+                  <span style={{ whiteSpace: 'nowrap' }}>{dayjs(post.frontmatter.date).format('YYYY/MM/DD HH:mm:ss')}</span>
+                </div>
+              </div>              
             </p>
           </header>
           <p>
