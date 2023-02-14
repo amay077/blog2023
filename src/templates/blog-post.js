@@ -6,6 +6,12 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import useSiteMetadata from "../components/SiteMetadata";
+import dayjs from 'dayjs'
+import timezone from "dayjs/plugin/timezone";
+import utc from "dayjs/plugin/utc";
+
+dayjs.extend(timezone);
+dayjs.extend(utc);
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -15,8 +21,10 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  date,
 }) => {
   const PostContent = contentComponent || Content;
+  const dateFormatted = dayjs(date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
 
   return (
     <section className="section">
@@ -27,20 +35,18 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
+                {tags.map((tag) => (
+                    <span>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+                    </span>
+                  ))}
+              </div>
+              <p>Posted on {dateFormatted}</p>
+            </div>
             <p>{description}</p>
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
@@ -75,6 +81,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        date={post.frontmatter.date}
       />
     </Layout>
   );
@@ -95,7 +102,7 @@ export const pageQuery = graphql`
       html
       excerpt(pruneLength: 200)
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         title
         description
         tags
