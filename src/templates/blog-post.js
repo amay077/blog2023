@@ -37,7 +37,7 @@ export const BlogPostTemplate = ({
             </h1>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-                {tags.map((tag) => (
+                {(tags ?? []).map((tag) => (
                     <span>
                       <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
                     </span>
