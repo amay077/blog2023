@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
+      <section className="section--gradient">
         <div className="container">
           <div className="">
             <div className="columns">
@@ -104,6 +104,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date
+            tags
             featuredpost
             featuredimage {
               childImageSharp {

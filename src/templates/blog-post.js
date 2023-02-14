@@ -35,16 +35,20 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-              <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
+            
+            <div class="columns is-mobile">
+              <div class="column"  style={{ display: 'flex', flexDirection: 'row', gap: '1rem', paddingTop: '0', paddingBottom: '0' }}>
                 {(tags ?? []).map((tag) => (
                     <span>
                       <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
                     </span>
-                  ))}
+                ))}
               </div>
-              <p>Posted on {dateFormatted}</p>
+              <div class="column" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'end', paddingTop: '0', paddingBottom: '0' }}>
+                <span>Posted on {dateFormatted}</span>
+              </div>
             </div>
+
             <p>{description}</p>
             <PostContent content={content} />
           </div>
