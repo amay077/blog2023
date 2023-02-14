@@ -7,7 +7,8 @@ import utc from "dayjs/plugin/utc";
 dayjs.extend(timezone);
 dayjs.extend(utc);
 
-export const BlogRoll2 = ({ posts }) => (
+export const BlogRoll2 = ({ posts }) => {
+  return (
   <div className="columns is-multiline">
     {posts && posts.map(({ node: post }) => (
       <div className="is-parent column is-6" key={post.id}>
@@ -25,8 +26,8 @@ export const BlogRoll2 = ({ posts }) => (
                 {post.frontmatter.title}
               </Link>
               <span></span>
-              <span className="subtitle is-size-5 is-block">
-                {dayjs(post.frontmatter.date).tz('Asia/Tokyo').format('YYYY-MM-DD HH:mm:ss')}
+              <span className="subtitle is-block">
+                {dayjs(post.frontmatter.date).format('YYYY/MM/DD HH:mm:ss')}
               </span>
             </p>
           </header>
@@ -41,8 +42,8 @@ export const BlogRoll2 = ({ posts }) => (
         </article>
         </div>
       ))}
-  </div>
-);
+  </div>)
+};
 
 
 
