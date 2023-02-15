@@ -9,6 +9,7 @@ dayjs.extend(timezone);
 dayjs.extend(utc);
 
 export const BlogRoll2 = ({ posts }) => {
+
   return (
   <div className="columns is-multiline">
     {posts && posts.map(({ node: post }) => (
@@ -19,27 +20,27 @@ export const BlogRoll2 = ({ posts }) => {
           }`}
         >
           <header>
-            <p className="post-meta">
+            <p>
               <Link
                 className="title has-text-primary is-size-4"
                 to={post.fields.slug}
               >
                 {post.frontmatter.title}
               </Link>
-              <span></span>
 
-              <div  class="columns is-mobile" style={{ fontSize: '0.9em', marginBottom: '0.2rem', marginTop: '0.5rem' }}>
-                <div class="column"  style={{ display: 'flex', flexDirection: 'row', gap: '1rem', paddingTop: '0', paddingBottom: '0' }}>
+              <div class="post-meta" style={{marginTop: '5px'}}>
+                <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                   {(post.frontmatter?.tags ?? []).map((tag) => (
                       <span>
                         <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
                       </span>
                   ))}
                 </div>
-                <div class="column" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'end', paddingTop: '0', paddingBottom: '0' }}>
-                  <span style={{ whiteSpace: 'nowrap' }}>{dayjs(post.frontmatter.date).format('YYYY/MM/DD HH:mm:ss')}</span>
+                <div>
+                  <span style={{ whiteSpace: 'nowrap' }}>{dayjs(post.frontmatter.date).format('YYYY/MM/DD HH:mm')}</span>
                 </div>
               </div>              
+           
             </p>
           </header>
           <p>
