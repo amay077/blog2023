@@ -36,16 +36,16 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             
-            <div class="columns is-mobile">
-              <div class="column"  style={{ display: 'flex', flexDirection: 'row', gap: '1rem', paddingTop: '0', paddingBottom: '0' }}>
+            <div class="post-meta">
+              <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                 {(tags ?? []).map((tag) => (
                     <span>
                       <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
                     </span>
                 ))}
               </div>
-              <div class="column" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'end', paddingTop: '0', paddingBottom: '0' }}>
-                <span>Posted on {dateFormatted}</span>
+              <div>
+                <span style={{ whiteSpace: 'nowrap' }}>Posted on {dateFormatted}</span>
               </div>
             </div>
 
