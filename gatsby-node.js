@@ -99,5 +99,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+    createNodeField({
+      name: `slug1`,
+      node,
+      value,
+    })
+
+    const tags = (node?.frontmatter?.tags ?? []).map(x => _.toLower(x));
+    console.log(`tags`, tags);
+    createNodeField({
+      name: `tagslower`,
+      node,
+      value: tags,
+    })
   }
 }
