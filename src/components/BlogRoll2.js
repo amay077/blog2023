@@ -12,7 +12,11 @@ export const BlogRoll2 = ({ posts }) => {
 
   return (
   <div className="columns is-multiline">
-    {posts && posts.map(({ node: post }) => (
+    {(posts ?? []).map(({ node: post }) => { 
+      const dateFormatted = dayjs(post.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
+      const tags = post.frontmatter?.tags;
+
+      return (
       <div className="is-parent column is-6" key={post.id}>
         <article
           className={`blog-list-item tile is-child box notification ${
@@ -30,14 +34,14 @@ export const BlogRoll2 = ({ posts }) => {
 
               <div class="post-meta" style={{marginTop: '5px'}}>
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
-                  {(post.frontmatter?.tags ?? []).map((tag) => (
+                  {(tags ?? []).map((tag) => (
                       <span>
                         <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
                       </span>
                   ))}
                 </div>
                 <div>
-                  <span style={{ whiteSpace: 'nowrap' }}>{dayjs(post.frontmatter.date).format('YYYY/MM/DD HH:mm')}</span>
+                  <span style={{ whiteSpace: 'nowrap' }}>{dateFormatted}</span>
                 </div>
               </div>              
            
@@ -53,7 +57,7 @@ export const BlogRoll2 = ({ posts }) => {
           </p>
         </article>
         </div>
-      ))}
+      )})}
   </div>)
 };
 
