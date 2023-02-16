@@ -10,7 +10,7 @@ tags:
 2010/12/4(土)、2回目の開催となる 浜松ハッカソン（ハマッカソン）、テーマがモバイルと聞いて Android  で参加してきました。
 <!--more-->
 
-<a href="http://www.flickr.com/photos/bigmac/5234115832/" title="Untitled by mackato, on Flickr"><img src="http://farm6.staticflickr.com/5283/5234115832_748685714b.jpg" width="500" height="332" alt="Untitled"></a>
+<a href="http://www.flickr.com/photos/bigmac/5234115832/" title="Untitled by mackato, on Flickr"><img src="https://farm6.staticflickr.com/5283/5234115832_748685714b.jpg" width="500" height="332" alt="Untitled"></a>
 
 * 浜松ハッカソン公開Wiki
 * 第2回 浜松ハッカソン(ハマッカソン2) 開催レポート - Blog on AIRS
@@ -42,7 +42,7 @@ tags:
 
 写真だけじゃなんのこっちゃ分かりませんがこんなアプリです。
 
-<a href="http://www.flickr.com/photos/bigmac/5234111922/" title="Untitled by mackato, on Flickr"><img src="http://farm6.staticflickr.com/5043/5234111922_286d7c8003.jpg" width="500" height="332" alt="Untitled"></a>
+<a href="http://www.flickr.com/photos/bigmac/5234111922/" title="Untitled by mackato, on Flickr"><img src="https://farm6.staticflickr.com/5043/5234111922_286d7c8003.jpg" width="500" height="332" alt="Untitled"></a>
 
 しかしまあ、この妥協具合は無いわ。最初「できる」と思ったのが恥ずかしいくらい。
 どんな感じかというと。。。
@@ -85,7 +85,7 @@ Androidチームの成果物は、こうしてできた私のアプリと、 [@m
 
 その後は懇親会。
 
-<a href="http://www.flickr.com/photos/bigmac/5234117260/" title="Untitled by mackato, on Flickr"><img src="http://farm6.staticflickr.com/5122/5234117260_109e8293c6.jpg" width="500" height="332" alt="Untitled"></a>
+<a href="http://www.flickr.com/photos/bigmac/5234117260/" title="Untitled by mackato, on Flickr"><img src="https://farm6.staticflickr.com/5122/5234117260_109e8293c6.jpg" width="500" height="332" alt="Untitled"></a>
 
 懇親会では、10歳以上も歳の差のある[静岡大学情報学部 佐藤哲也研究室（通称 おめでてー研 というらしい）](http://tai.ia.inf.shizuoka.ac.jp/index.php?action=pages_view_main&page_id=43) の学生さん方々と相席になり、オジサン何話せばいいの？状態でしたが、
 
