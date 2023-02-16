@@ -13,8 +13,9 @@ export const BlogRoll2 = ({ posts }) => {
   return (
   <div className="columns is-multiline">
     {(posts ?? []).map(({ node: post }) => { 
-      const dateFormatted = dayjs(post.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
-      const tags = post.frontmatter?.tags;
+      const dateFormatted = dayjs(post?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
+      console.log(`dateFormatted`, dateFormatted);
+      const tags = post.frontmatter?.tags ?? [];
 
       return (
       <div className="is-parent column is-6" key={post.id}>
@@ -24,7 +25,7 @@ export const BlogRoll2 = ({ posts }) => {
           }`}
         >
           <header>
-            <p>
+            <div>
               <Link
                 className="title has-text-primary is-size-4"
                 to={post.fields.slug}
@@ -32,10 +33,10 @@ export const BlogRoll2 = ({ posts }) => {
                 {post.frontmatter.title}
               </Link>
 
-              <div class="post-meta" style={{marginTop: '5px'}}>
+              <div className="post-meta" style={{marginTop: '5px'}}>
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                   {(tags ?? []).map((tag) => (
-                      <span>
+                      <span key={tag}>
                         <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
                       </span>
                   ))}
@@ -45,7 +46,7 @@ export const BlogRoll2 = ({ posts }) => {
                 </div>
               </div>              
            
-            </p>
+            </div>
           </header>
           <p>
             {post.excerpt}

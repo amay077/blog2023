@@ -14,9 +14,6 @@ export const BlogIndexPage = ({ data, pageContext }) => {
     <Layout>
       <div
         className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url('/img/blog-index.jpg')`,
-        }}
       >
         <h1
           className="has-text-weight-bold is-size-1"
@@ -27,10 +24,10 @@ export const BlogIndexPage = ({ data, pageContext }) => {
             padding: "1rem",
           }}
         >
-          Latest Posts
+          Archives
         </h1>
       </div>
-      <section className="">
+      <section className="" style={{ marginBottom: '40px' }}>
         <div className="container">
           <div className="content">
             <BlogRoll2 posts={posts} />
