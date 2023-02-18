@@ -9,7 +9,6 @@ const TemplateWrapper = ({ children }) => {
     const { title, description, origin } = useSiteMetadata();
     const pageTitle = children?.props?.title ?? 'no title';
     const excerpt = (children?.props?.excerpt ?? description ?? 'no desc').substring(0, 100);
-    console.log(`TemplateWrapper ~ excerpt`, excerpt);
 
     return (
     <div>

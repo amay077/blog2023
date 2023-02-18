@@ -106,7 +106,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
 
     const tags = (node?.frontmatter?.tags ?? []).map(x => x.toLowerCase());
-    console.log(`tags`, tags);
     createNodeField({
       name: `tagslower`,
       node,

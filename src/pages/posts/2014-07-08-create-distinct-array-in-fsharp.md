@@ -3,7 +3,7 @@ templateKey: blog-post
 title: ランダムで且つ重複しない数値リストを作る
 date: 2014-07-08T00:00:00.000+09:00
 tags:
-  - F#
+  - fsharp
   - Xamarin
 ---
 F# 入門中です。

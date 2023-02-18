@@ -13,7 +13,6 @@ export const BlogRoll2 = ({ posts }) => {
   <div className="columns is-multiline">
     {(posts ?? []).map(({ node: post }) => { 
       const dateFormatted = dayjs(post?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
-      console.log(`dateFormatted`, dateFormatted);
       const tags = post.frontmatter?.tags ?? [];
 
       return (
