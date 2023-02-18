@@ -36,7 +36,7 @@ export const BlogRoll2 = ({ posts }) => {
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                   {(tags ?? []).map((tag) => (
                       <span key={tag}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+                        <Link to={`/tags/${tag.toLowerCase()}/`}>#{tag}</Link>
                       </span>
                   ))}
                 </div>
