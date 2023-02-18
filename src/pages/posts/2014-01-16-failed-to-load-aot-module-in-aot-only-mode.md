@@ -5,7 +5,7 @@ date: 2014-01-16T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
 ---
 Xamarin.iOS で Binding プロジェクトをプロジェクトに追加して実機で実行したら、起動時に落ちるようになってしまった。
 <!--more-->

@@ -10,7 +10,7 @@ tags:
   - xamarin
   - android
   - ios
-  - C#
+  - csharp
 ---
 * [ReactiveCocoa Tokyo #rac_tokyo - connpass](http://connpass.com/event/8680/)
 * [RxJava Night #rxjnight - connpass](http://connpass.com/event/9061/)

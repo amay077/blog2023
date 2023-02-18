@@ -3,7 +3,7 @@ templateKey: blog-post
 title: LINQ to Objects と Java8-Stream API の対応表
 date: 2014-03-20T00:00:00.000+09:00
 tags:
-  - C#
+  - csharp
   - Java
   - LINQ
 ---

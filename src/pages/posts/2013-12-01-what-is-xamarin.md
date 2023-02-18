@@ -7,7 +7,7 @@ tags:
   - XAC13
   - iOS
   - Android
-  - C#
+  - csharp
 ---
 
 【2017年5月時点の情報で更新しました。】

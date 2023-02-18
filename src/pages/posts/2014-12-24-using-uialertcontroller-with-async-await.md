@@ -5,7 +5,7 @@ date: 2014-12-24T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
 ---
 　これは [Xamarin Advent Calendar 2014 23日目](http://qiita.com/advent-calendar/2014/xamarin) の記事です。
 

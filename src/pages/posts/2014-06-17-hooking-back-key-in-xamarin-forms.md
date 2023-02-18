@@ -4,7 +4,7 @@ title: Xamarin.Forms、Android での BACK キーの制御
 date: 2014-06-17T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - Android
 ---
 [Xamarin.Forms でどうにかしたい iOS と Android の違い](http://qiita.com/amay077/items/12979585ac3e2dcacacb) の「BACKキーの制御」の **現時点(1.1.0.6201)** での回答。

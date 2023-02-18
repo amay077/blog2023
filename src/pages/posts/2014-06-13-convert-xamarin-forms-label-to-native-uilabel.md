@@ -5,7 +5,7 @@ date: 2014-06-13T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
 ---
 [Xamarin.Forms でどうにかしたい iOS と Android の違い]( http://qiita.com/amay077/items/12979585ac3e2dcacacb) の「文字の自動縮小」の自己回答。
 <!--more-->

@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - XAC13
   - iOS
-  - C#
+  - csharp
 ---
 今日も小ネタです。
 

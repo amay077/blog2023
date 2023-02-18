@@ -5,7 +5,7 @@ date: 2013-03-03T00:00:00.000+09:00
 tags:
   - Xamarin
   - Android
-  - C#
+  - csharp
 ---
 オレオレApplicationクラスって、[コレ](http://techbooster.org/android/application/2353/)のことなんですが、正式名称知らないので勝手にこう呼んでます(^_^;)
 <!-- more -->

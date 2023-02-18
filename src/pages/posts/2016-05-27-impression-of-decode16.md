@@ -6,7 +6,7 @@ tags:
   - .NET
   - Xamarin
   - Microsoft
-  - C#
+  - csharp
 ---
 Microsoft の開発者向けイベント [de:code 2016](https://www.microsoft.com/ja-jp/events/decode/2016/) に参加させてもらいましたので感想を書きます。
 <!--more-->

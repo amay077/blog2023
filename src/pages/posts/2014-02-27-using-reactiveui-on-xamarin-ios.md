@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - MVVM
-  - C#
+  - csharp
   - iOS
 ---
 ReactiveUI は、Reactive Extensions を全面的に取り入れた クロスプラットフォームな MVVMフレームワークです。

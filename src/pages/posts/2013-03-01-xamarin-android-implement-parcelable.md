@@ -5,7 +5,7 @@ date: 2013-03-01T00:00:00.000+09:00
 tags:
   - Xamarin
   - Android
-  - C#
+  - csharp
 ---
 [前回のポスト](http://amay077.github.io/blog/2013/02/28/helloworld-on-xamarin-android/)で HelloWorld を見てみましたが、次は Activity をもう一つ作って画面遷移してみます。
 

@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - iOS
-  - C#
+  - csharp
 ---
 アプリの設定情報なんかを保存する時、Android では SharedPreference 、iOS では NSUserDefaults を使うわけですが、プラットフォーム毎にコード書くのめんどい！と思って
 <!--more-->

@@ -4,7 +4,7 @@ title: Xamarin Component Store を眺めてみる
 date: 2013-03-26T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
 ---
 Xamarin には Component Store というものがあって、Xamarin で利用できる部品をここから購入することができます。(FREE もあります)
 <!--more-->

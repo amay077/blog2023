@@ -4,7 +4,7 @@ title: Xamarin.Android での Google Map(というか Play Service) 利用が、
 date: 2013-08-03T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - Android
   - GoogleMapsAPI
 ---

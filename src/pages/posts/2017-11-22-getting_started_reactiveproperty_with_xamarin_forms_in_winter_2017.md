@@ -4,7 +4,7 @@ title: 2017年冬から始める ReactiveProperty + Xamarin.Forms
 date: 2017-11-22T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - .NET
   - Android
   - iOS

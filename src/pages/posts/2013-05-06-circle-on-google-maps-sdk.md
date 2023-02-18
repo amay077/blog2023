@@ -7,7 +7,7 @@ tags:
   - Android
   - iOS
   - GoogleMapsAPI
-  - C#
+  - csharp
 ---
 [Google Maps Android API v2](https://developers.google.com/maps/documentation/android/) にいつの間にか ``Circle`` が追加されてました。[Google Maps SDK for iOS](https://developers.google.com/maps/documentation/ios/?hl=ja) も同様に。
 <!--more-->

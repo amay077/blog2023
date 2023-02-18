@@ -3,7 +3,7 @@ templateKey: blog-post
 title: C# で Reactive PPAP
 date: 2016-11-11T00:00:00.000+09:00
 tags:
-  - C#
+  - csharp
   - ズンドコキヨシ
   - ReactiveExtensions
 ---

@@ -4,7 +4,7 @@ title: Xamarin Workbooks とかいうやつ
 date: 2016-04-29T00:00:00.000+09:00
 tags:
   - iOS
-  - C#
+  - csharp
   - Xamarin
   - Android
   - Markdown

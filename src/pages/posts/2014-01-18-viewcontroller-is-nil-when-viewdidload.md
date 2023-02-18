@@ -5,7 +5,7 @@ date: 2014-01-18T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
 ---
 Xamarin Studio + Xcode で Storyboard でアプリを作っていた。複数ある画面の内、ある一つの画面に遷移すると落ちる現象に見舞われていろいろ調べていた。
 <!--more-->

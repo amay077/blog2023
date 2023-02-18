@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Xamarin.iOS
   - iOS
-  - C#
+  - csharp
 ---
 
 Xamarin.iOS で、「端末からインターネット通信が可能か？」を調べたい。

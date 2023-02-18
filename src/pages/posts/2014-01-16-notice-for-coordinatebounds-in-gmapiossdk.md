@@ -5,7 +5,7 @@ date: 2014-01-16T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
   - GoogleMapsAPI
 ---
 すごくニッチな話ですけど、Xamarin Components にある Google Maps を Xamarin.iOS で使った。

@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Xamarin.Forms
   - iOS
-  - C#
+  - csharp
 ---
 
 Xamarin.Forms では、左からスライドして出てくるメニューを持つ画面を ``MasterDetailPage`` で作成します。

@@ -4,7 +4,7 @@ title: Nintendo Switch Online アプリは Xamarin(Xamarin.Forms)製です
 date: 2017-07-19T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - Android
   - iOS
 ---

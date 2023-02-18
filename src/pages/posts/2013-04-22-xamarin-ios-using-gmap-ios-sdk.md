@@ -4,7 +4,7 @@ title: Google Maps SDK for iOS を Xamarin.iOS で使う
 date: 2013-04-22T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - iOS
   - GoogleMapsAPI
 ---

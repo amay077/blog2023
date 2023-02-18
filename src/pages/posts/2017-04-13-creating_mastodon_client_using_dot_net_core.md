@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Mastodon のクライアントアプリを .NET Core で作ってみた
 date: 2017-04-13T00:00:00.000+09:00
 tags:
-  - C#
+  - csharp
   - Mastodon
   - .NET
 ---

@@ -7,7 +7,7 @@ tags:
   - XAC13
   - iOS
   - Android
-  - C#
+  - csharp
 ---
 Build Insider さんでも Xamarin の記事が公開され、影響力では完全に喰われてしまっている [Xamarin Advent Calendar 2013](http://qiita.com/advent-calendar/2013/xamarin) です。
 <!--more-->

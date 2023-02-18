@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - iOS
-  - C#
+  - csharp
 ---
 新年あけましておめでとうございます。
 今年も Xamarin 推しで参ります、よろしくお願いします。

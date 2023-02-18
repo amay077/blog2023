@@ -7,7 +7,7 @@ tags:
   - XAC13
   - iOS
   - Android
-  - C#
+  - csharp
 ---
 Github社は、割と Xamarin に熱心で、[Xamarin Evolve というイベントでセッション](http://xamarin.com/evolve/2013#session-zm59b5yptf)を行ったり、その時の資料が日本の速報系サイトで 「[Ruby を捨てて C# と MVVM に完全移行](http://blog.livedoor.jp/itsoku/archives/33671593.html)」なんてヒドい扱い受けちゃったりしてます。
 <!--more-->

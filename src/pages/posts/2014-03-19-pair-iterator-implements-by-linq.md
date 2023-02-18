@@ -3,7 +3,7 @@ templateKey: blog-post
 title: ふたつの Iterator を LINQ で
 date: 2014-03-19T00:00:00.000+09:00
 tags:
-  - C#
+  - csharp
   - Java
 ---
 ふたつの Iterator を LINQ で

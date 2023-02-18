@@ -4,7 +4,7 @@ title: Xamarin を使用したアプリ開発での、問題解決の方法
 date: 2017-07-18T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - Android
   - iOS
   - .NET

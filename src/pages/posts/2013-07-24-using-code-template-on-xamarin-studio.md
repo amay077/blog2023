@@ -5,7 +5,7 @@ date: 2013-07-24T00:00:00.000+09:00
 tags:
   - Xamarin
   - MvvmCross
-  - C#
+  - csharp
 ---
 Visual Studio や Eclipse とか、IDE ならだいたい備えているコードテンプレート、呼び名はそれぞれ違いますが、``for`` ってタイプすると ``for (object o : items) {  }`` 的なコードのひな形を生成してくれる機能の事です。
 <!--more-->

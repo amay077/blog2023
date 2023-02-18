@@ -7,7 +7,7 @@ tags:
   - XAC13
   - iOS
   - Android
-  - C#
+  - csharp
 ---
 それ Xamarin じゃなくて C# じゃん！とかのツッコミはナシでｗ
 まあ Java よりも Objective-C よりも C# がイイから選んでいるわけで。

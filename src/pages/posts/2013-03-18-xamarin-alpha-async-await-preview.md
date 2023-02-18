@@ -4,7 +4,7 @@ title: Xamarin の Alpha版で async/await を試す
 date: 2013-03-18T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - Android
 ---
 Xamarin Blog で "[Alpha版だけど async/await 使えるようになったよー](http://blog.xamarin.com/brave-new-async-mobile-world/)" との事だったのでさっそく試してみました。

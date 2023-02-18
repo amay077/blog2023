@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - iBeacon
   - iOS
-  - C#
+  - csharp
   - XAC13
 ---
 こちらは、[iBeacon Advent Calendar 2013](http://qiita.com/advent-calendar/2013/ibeacon) と [Xamarin Advent Calendar 2013](http://qiita.com/advent-calendar/2013/xamarin) とのクロスポストになります。

@@ -3,7 +3,7 @@ templateKey: blog-post
 title: C# と Reactive Extensions でズンドコキヨシ
 date: 2016-03-12T00:00:00.000+09:00
 tags:
-  - C#
+  - csharp
   - ReactiveX
   - ズンドコキヨシ
   - .NET

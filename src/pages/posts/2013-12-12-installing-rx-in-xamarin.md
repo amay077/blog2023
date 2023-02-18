@@ -7,7 +7,7 @@ tags:
   - XAC13
   - iOS
   - Android
-  - C#
+  - csharp
   - ReactiveExtensions
 ---
 昨日の [ポスト](http://qiita.com/amay077/items/49681b2de5d8cf208112) を使ったのに、肝心の導入部分を説明するのを忘れていました。まあ Components から追加するだけなのですが。他のアドベントカレンダーとの掛け持ちで疲れたので、今日は軽く書いて済ませます。

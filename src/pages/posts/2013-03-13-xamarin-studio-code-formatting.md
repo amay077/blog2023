@@ -4,7 +4,7 @@ title: Xamarin Studio でコード整形を Visual Studio っぽくする
 date: 2013-03-13T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
 ---
 Xamarin Studio の既定のコードフォーマットは、メソッド名の後ろにスペースが空いていてどうにも気に入らない。いろいろ設定をさばくって(方言)いたら見つかりました。
 

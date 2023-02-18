@@ -7,7 +7,7 @@ tags:
   - Android
   - Java
   - Xamarin
-  - C#
+  - csharp
 ---
 Android で「浮いてるように見える」アニメーションを実装する機会がありまして。次の画像のようなものなんですが。
 <!--more-->

@@ -3,7 +3,7 @@ templateKey: blog-post
 title: ReactiveProperty で2度押し防止(Using使ったやつ)
 date: 2016-04-07T00:00:00.000+09:00
 tags:
-  - C#
+  - csharp
   - ReactiveProperty
   - ReactiveX
 ---

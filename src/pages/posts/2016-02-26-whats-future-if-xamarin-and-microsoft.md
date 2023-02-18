@@ -4,7 +4,7 @@ title: Xamarin が Microsoft に買収されたので、今後を勝手に予想
 date: 2016-02-26T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - Android
   - iOS
 ---

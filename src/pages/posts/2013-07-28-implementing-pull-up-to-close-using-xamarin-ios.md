@@ -5,7 +5,7 @@ date: 2013-07-28T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
 ---
 イマドキのスマホアプリでは Pull to Refresh（引っ張って更新）を実装してるアプリをよく目にするのですが、RSS Reader の Feedly では Pull up to Close（上に引っぱって閉じる）も採用しています。
 

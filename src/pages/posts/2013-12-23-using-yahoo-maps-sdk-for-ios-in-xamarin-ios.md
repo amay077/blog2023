@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - XAC13
   - iOS
-  - C#
+  - csharp
   - Geo
 ---
 Xamarin.iOS では、既存の iOS用ライブラリが利用できます。

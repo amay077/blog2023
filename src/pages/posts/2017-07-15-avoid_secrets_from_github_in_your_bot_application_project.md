@@ -4,7 +4,7 @@ title: Bot Application のソースコードを GitHub で公開する時に秘�
 date: 2017-07-15T00:00:00.000+09:00
 tags:
   - BotFramework
-  - C#
+  - csharp
   - .NET
   - ASP.NET
   - VisualStudio

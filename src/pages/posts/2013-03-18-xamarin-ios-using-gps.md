@@ -5,7 +5,7 @@ date: 2013-03-18T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
 ---
 Xamarin.iOS で GPS を使ってみます。
 ちなみ当方、iOS開発についてはシロートに毛が生えた程度なため、Objective-C でも GPS は使ったことありません。

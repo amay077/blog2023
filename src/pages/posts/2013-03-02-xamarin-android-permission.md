@@ -5,7 +5,7 @@ date: 2013-03-02T00:00:00.000+09:00
 tags:
   - Xamarin
   - Android
-  - C#
+  - csharp
 ---
 Xamarin.Android でプロジェクト作ると AndroidManifest.xml が見当たらない。
 GPS使いたいんだけど権限設定どうしよう、と思ったらこうできました。

@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - iOS
-  - C#
+  - csharp
 ---
 [以前、MvvmCross を紹介しました](http://amay077.github.io/blog/2013/12/25/using-mvvmcross-the-x-platform-mvvm-framework/) が、Xamarin で使える同種のフレームワークはまだいくつかあります。
 <!--more-->

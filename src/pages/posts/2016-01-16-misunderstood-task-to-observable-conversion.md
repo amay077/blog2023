@@ -4,7 +4,7 @@ title: Task→Observable 変換でハマったこと
 date: 2016-01-16T00:00:00.000+09:00
 tags:
   - ReactiveX
-  - C#
+  - csharp
 ---
 .NET の ``Task<T>`` は、Reactive Extensions が提供する拡張メソッド ``ToObservable()`` で ``IObservable<T>`` に変換できます。
 

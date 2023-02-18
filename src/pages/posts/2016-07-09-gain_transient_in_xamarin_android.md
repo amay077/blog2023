@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Xamarin.Android で音楽の音量を下げてから効果音を再生する
 date: 2016-07-09T00:00:00.000+09:00
 tags:
-  - C#
+  - csharp
   - Android
   - Xamarin
 ---

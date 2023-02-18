@@ -5,7 +5,7 @@ date: 2017-07-13T00:00:00.000+09:00
 tags:
   - Xamarin
   - VisualStudio
-  - C#
+  - csharp
 ---
 小ネタです。
 <!--more-->

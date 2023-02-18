@@ -5,7 +5,7 @@ date: 2013-02-28T00:00:00.000+09:00
 tags:
   - Android
   - Xamarin
-  - C#
+  - csharp
 ---
 MonoDroid とか Mono for Android とか呼ばれてた時は、「あーどうせ MonoDevelop と他のモジュールあれこれインストールしなきゃいけないんでしょ？」と腰が重かったのですが、[Xamarin 2.0 としてオールインワン化](http://www.forest.impress.co.jp/docs/news/20130221_588816.html)されるとこうも食指が動きますか。
 

@@ -5,7 +5,7 @@ date: 2016-11-02T00:00:00.000+09:00
 tags:
   - Xamarin
   - ios
-  - C#
+  - csharp
 ---
 なんで ``NSDate`` ってこんなにわけわからんの？
 

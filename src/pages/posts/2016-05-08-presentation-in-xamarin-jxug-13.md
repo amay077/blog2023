@@ -5,7 +5,7 @@ date: 2016-05-08T00:00:00.000+09:00
 tags:
   - Xamarin
   - Android
-  - C#
+  - csharp
 ---
 
 * [JXUGC #13 東京 緊急開催 Xamarin のすべて！ - connpass](http://jxug.connpass.com/event/29734/)

@@ -4,7 +4,7 @@ title: Xamarin が Microsoft に買収された結果
 date: 2016-04-01T00:00:00.000+09:00
 tags:
   - Xamarin
-  - C#
+  - csharp
   - Android
   - iOS
 ---

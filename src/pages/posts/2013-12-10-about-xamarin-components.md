@@ -7,7 +7,7 @@ tags:
   - XAC13
   - iOS
   - Android
-  - C#
+  - csharp
 ---
 Titanium に [MarketPlace](https://marketplace.appcelerator.com/home) があるように、Xamarin のマーケットプレイスとして Xamarin Components があります。
 <!--more-->

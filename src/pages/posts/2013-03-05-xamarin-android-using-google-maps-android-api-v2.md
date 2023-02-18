@@ -5,7 +5,7 @@ date: 2013-03-05T00:00:00.000+09:00
 tags:
   - Xamarin
   - Android
-  - C#
+  - csharp
   - GoogleMapsAPI
 ---
 だんだん自力でサンプルプログラム書くのに疲れてきたので、MonoDroid のサンプル集に頼ることにします。

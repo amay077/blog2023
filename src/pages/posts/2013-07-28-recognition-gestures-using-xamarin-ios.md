@@ -5,7 +5,7 @@ date: 2013-07-28T00:00:00.000+09:00
 tags:
   - Xamarin
   - iOS
-  - C#
+  - csharp
 ---
 [Xamarin.iOS](http://xamarin.com/) でも ``UIGestureRecognizer`` が普通に使えるわけですが、Objective-C に比べてコードが短く書けて感動した話です。
 <!--more-->

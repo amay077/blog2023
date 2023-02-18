@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - iOS
-  - C#
+  - csharp
 ---
 2/26 の [うずらインキュベータ](http://atnd.org/events/47898) という勉強会で、Xamarin の話をしました。
 <!--more-->

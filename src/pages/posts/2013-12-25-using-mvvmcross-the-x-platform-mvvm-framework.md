@@ -7,7 +7,7 @@ tags:
   - XAC13
   - iOS
   - Android
-  - C#
+  - csharp
 ---
 [Xamarin Advent Calendar 2013](http://qiita.com/advent-calendar/2013/xamarin) も最終日となりました。
 最後は、「実用的な」マルチプラットフォーム開発のツールを紹介します。

@@ -5,7 +5,7 @@ date: 2013-07-22T00:00:00.000+09:00
 tags:
   - Xamarin
   - MvvmCross
-  - C#
+  - csharp
 ---
 クロスプラットフォーム MVVM フレームワーク「[MvvmCross](https://github.com/slodge/MvvmCross)」を Mac の Xamarin Studio で使うための準備についてです。
 <!--more-->
