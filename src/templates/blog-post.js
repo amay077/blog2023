@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
@@ -40,7 +39,7 @@ export const BlogPostTemplate = ({
               <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                 {(tags ?? []).map((tag) => (
                     <span>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+                      <Link to={`/tags/${tag.toLowerCase()}/`}>#{tag}</Link>
                     </span>
                 ))}
               </div>

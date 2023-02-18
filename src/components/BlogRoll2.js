@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import dayjs from 'dayjs'
 import timezone from "dayjs/plugin/timezone";
 import utc from "dayjs/plugin/utc";
-import { kebabCase } from "lodash";
 
 dayjs.extend(timezone);
 dayjs.extend(utc);
@@ -36,7 +35,7 @@ export const BlogRoll2 = ({ posts }) => {
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                   {(tags ?? []).map((tag) => (
                       <span>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+                        <Link to={`/tags/${tag.toLowerCase()}/`}>#{tag}</Link>
                       </span>
                   ))}
                 </div>
