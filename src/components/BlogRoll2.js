@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import dayjs from 'dayjs'
 import timezone from "dayjs/plugin/timezone";
 import utc from "dayjs/plugin/utc";
-import { kebabCase } from "lodash";
 
 dayjs.extend(timezone);
 dayjs.extend(utc);
