@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import Layout from "../../components/Layout";
-import BlogRoll2 from "../../components/BlogRoll2";
+import ArchiveRoll from "../../components/ArchiveRoll";
 import Pagination from "../../components/Pagination";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 export const BlogIndexPage = ({ data, pageContext }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -16,7 +16,7 @@ export const BlogIndexPage = ({ data, pageContext }) => {
         className="full-width-image-container margin-top-0"
       >
         <h1
-          className="has-text-weight-bold is-size-1"
+          className="has-text-weight-bold is-size-3"
           style={{
             boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
             backgroundColor: "#f40",
@@ -30,7 +30,7 @@ export const BlogIndexPage = ({ data, pageContext }) => {
       <section className="" style={{ marginBottom: '40px' }}>
         <div className="container">
           <div className="content">
-            <BlogRoll2 posts={posts} />
+            <ArchiveRoll posts={posts} />
             <Pagination page={pageContext.page ?? 1} size={20} totalCount={totalCount} />
           </div>
         </div>

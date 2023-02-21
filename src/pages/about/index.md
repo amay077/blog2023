@@ -54,9 +54,13 @@ under construction
 
 ## Where are you?
 
-### Twitter
+### Mastodon
 
-ほぼいつも居ます。
+Twitter の Musk 化以降、Mastodon の方に長い時間居ます。
+
+* <https://mastodon.cloud/@amay077
+
+### Twitter
 
 * <https://twitter.com/amay077>
 
@@ -83,9 +87,9 @@ Xamarin に関する質問はウォッチしてるので気軽に投稿してく
 
 ### 作ったアプリ
 
-Android 向けに作ったアプリを公開してます。
+Android 向けに作ったアプリを公開してました（がメンテサボってたら消されちゃった）。
 
-* [Google Play store](https://play.google.com/store/apps/developer?id=amay077&hl=ja)
+* [~~Google Play store~~](https://play.google.com/store/apps/developer?id=amay077&hl=ja)
 
 ### 発表資料
 
