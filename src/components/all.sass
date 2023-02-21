@@ -112,9 +112,7 @@ $menu-label-color: $white-ter
     vertical-align: middle
     display: inline
 
-// blog roll
-.blog-list-item.is-featured
-  background-color: #d6400033
+// tag roll
 .blog-list-item header
   display: flex
   flex-direction: column
@@ -123,15 +121,25 @@ $menu-label-color: $white-ter
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
+// blog roll
+.tag-list-item.is-featured
+  background-color: #d6400033
+.tag-list-item header
+  display: flex
+  flex-direction: column
+  margin-bottom: 1em
+.tag-list-item .featured-thumbnail
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 @import "~bulma"
+
+.notification
+  padding: 1.25rem 1.5rem 1.25rem 1.5rem
 
 .subtitle
   font-size: 0.9em
   padding: 0.2rem 0rem
-
-.notification
-  padding: 1.25rem 1.5rem 1.25rem 1.5rem
 
 .post-meta
   display: flex

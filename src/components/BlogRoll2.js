@@ -25,7 +25,7 @@ export const BlogRoll2 = ({ posts }) => {
           <header>
             <div>
               <Link
-                className="title has-text-primary is-size-4"
+                className="title has-text-primary is-size-5"
                 to={post.fields.slug}
               >
                 {post.frontmatter.title}
