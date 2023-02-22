@@ -7,7 +7,7 @@ import utc from "dayjs/plugin/utc";
 dayjs.extend(timezone);
 dayjs.extend(utc);
 
-export const BlogRoll2 = ({ posts }) => {
+export const BlogRoll = ({ posts }) => {
 
   return (
   <div className="columns is-multiline">
@@ -62,4 +62,4 @@ export const BlogRoll2 = ({ posts }) => {
 
 
 
-export default BlogRoll2;
+export default BlogRoll;

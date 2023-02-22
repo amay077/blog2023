@@ -5,7 +5,7 @@ import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import BlogRoll2 from "../components/BlogRoll2";
+import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="column is-12">
-                    <BlogRoll2 posts={posts} />
+                    <BlogRoll posts={posts} />
                     <div className="column is-12 has-text-centered">
                       <Link to="/posts">
                         <button class="button is-primary">
