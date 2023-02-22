@@ -36,7 +36,7 @@ export const BlogPostTemplate = ({
             </h1>
             
             <div class="post-meta">
-              <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
+              <div className="hashtags" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                 {(tags ?? []).map((tag) => (
                     <span>
                       <Link to={`/tags/${tag.toLowerCase()}/`}>#{tag}</Link>

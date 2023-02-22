@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
-import "./all.sass";
+import "./all.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
@@ -52,7 +52,6 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar title={title}></Navbar>
       <div>{children}</div>
-      {/* <Footer /> */}
     </div>
   );
 };

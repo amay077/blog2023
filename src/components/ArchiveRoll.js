@@ -32,7 +32,7 @@ export const ArchiveRoll = ({ posts }) => {
               </Link>
 
               <div className="post-meta" style={{marginTop: '5px'}}>
-                <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
+                <div className="hashtags" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0 0.5rem' }}>
                   {(tags ?? []).map((tag) => (
                       <span key={tag}>
                         <Link to={`/tags/${tag.toLowerCase()}/`}>#{tag}</Link>
