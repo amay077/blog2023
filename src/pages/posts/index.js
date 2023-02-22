@@ -27,7 +27,7 @@ export const BlogIndexPage = ({ data, pageContext }) => {
           Archives
         </h1>
       </div>
-      <section className="" style={{ marginBottom: '40px' }}>
+      <section className="" style={{ marginBottom: '40px', marginLeft: '20px', marginRight: '20px' }}>
         <div className="container">
           <div className="content">
             <ArchiveRoll posts={posts} />

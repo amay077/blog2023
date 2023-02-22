@@ -46,7 +46,7 @@ export const BlogRoll2 = ({ posts }) => {
            
             </div>
           </header>
-          <p>
+          <p style={{marginTop: '1rem'}}>
             {post.excerpt}
             <br />
             <br />
