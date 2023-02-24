@@ -46,7 +46,10 @@ export const tagPageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 1000) {
+    allMarkdownRemark(
+      limit: 1000
+      filter: { fields: { tagslower: { nin: ["draft"] } } }
+    ) {
       group(field: fields___tagslower) {
         fieldValue
         totalCount

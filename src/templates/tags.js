@@ -105,7 +105,12 @@ export const tagPageQuery = graphql`
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { tagslower: { in: [$tag] } } }
+      filter: { 
+        fields: { tagslower: { 
+          in: [$tag] 
+          nin: ["draft"]
+        } }
+      }
     ) {
       totalCount
       edges {

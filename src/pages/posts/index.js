@@ -53,7 +53,10 @@ export const pageQuery = graphql`
   query($limit: Int = 20, $skip: Int = 0)  {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: { 
+        frontmatter: { templateKey: { eq: "blog-post" } } 
+        fields: { tagslower: { nin: ["draft"] } }        
+      }
       skip: $skip
       limit: $limit
     ) {
