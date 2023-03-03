@@ -3,7 +3,7 @@ templateKey: blog-post
 title: コンソールアプリからBot Frameworkを使ってBotからクライアントにメッセージを送る
 date: 2017-07-08T00:00:00.000+09:00
 tags:
-  - .NET
+  - dotnet
   - BotFramework
   - csharp
   - skype

@@ -6,7 +6,7 @@ tags:
   - csharp
   - ReactiveX
   - ズンドコキヨシ
-  - .NET
+  - dotnet
   - ReactiveExtensions
 ---
 

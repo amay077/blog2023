@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-* [Rider EAP 20: Xamarin Android, Node.js, .NET Core improvements, and more - .NET Tools Blog.NET Tools Blog](https://blog.jetbrains.com/dotnet/2017/04/14/rider-eap-20-xamarin-android-node-js-net-core-improvements/)
+* [Rider EAP 20: Xamarin Android, Node.js, .NET Core improvements, and more - dotnet Tools Blog.NET Tools Blog](https://blog.jetbrains.com/dotnet/2017/04/14/rider-eap-20-xamarin-android-node-js-net-core-improvements/)
 
 たとえば [Xamarin Samples](https://developer.xamarin.com/samples/) の
 

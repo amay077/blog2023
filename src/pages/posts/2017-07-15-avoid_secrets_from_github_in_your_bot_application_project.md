@@ -5,7 +5,7 @@ date: 2017-07-15T00:00:00.000+09:00
 tags:
   - BotFramework
   - csharp
-  - .NET
+  - dotnet
   - ASP.NET
   - VisualStudio
 ---

@@ -5,7 +5,7 @@ date: 2017-04-13T00:00:00.000+09:00
 tags:
   - csharp
   - Mastodon
-  - .NET
+  - dotnet
 ---
 Mastodon という「自由で」「オープンソースな」（Twitter のような） SNS がなんか流行りだして、もともとあった [mastodon.cloud](https://mastodon.cloud/) や [@nullkal](https://twitter.com/nullkal) 氏が立てたインスタンス [mstdn.jp](https://mstdn.jp/) に日本人が多くあつまって祭りみたいになってる。
 
