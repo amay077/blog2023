@@ -58,7 +58,8 @@ Google Play Services を検索して Add to App します。
 
 ``MainActivity.cs`` は、最初の内容をごっそり削除して以下のようにします。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 using Android.App;
 using Android.OS;
 

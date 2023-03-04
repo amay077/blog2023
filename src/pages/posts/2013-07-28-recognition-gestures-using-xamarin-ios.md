@@ -17,7 +17,8 @@ tags:
 
 ## サンプルコード
 
-```csharp GesturesSample_ViewDidLoad.cs
+```csharp
+//GesturesSample_ViewDidLoad.cs
 // Tap gesture
 this.View.AddGestureRecognizer(new UITapGestureRecognizer(tap => 
 {

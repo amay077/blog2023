@@ -41,7 +41,8 @@ IsolatedStorage は、どこまでアクセス許可を与えるかを [``Isolat
 
 を参考にさせてもらいました。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 using System;
 
 using Android.App;
@@ -92,7 +93,8 @@ namespace IsolatedStorageTest
 
 次に Xamarin.iOS でも適当なプロジェクトを作って、``ViewDidLoad`` に IsolatedStorage への書き出しコードを挿入します。
 
-```csharp IsolatedStorageiOSTestViewController.cs
+```csharp
+//IsolatedStorageiOSTestViewController.cs
 using System;
 using System.Drawing;
 

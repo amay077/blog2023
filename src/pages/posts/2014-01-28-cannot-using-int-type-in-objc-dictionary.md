@@ -41,7 +41,7 @@ int と Integer ってのがあって、int を使って HashMap を宣言でき
 
 ### C＃
 
-```csharp C#
+```csharp
 var dic = new Dictionary<int, string>(); // 型推論＆Generic
 dic.Add(1, "hoge"); // OK
 dic.Add(2, "piyo"); 

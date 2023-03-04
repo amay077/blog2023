@@ -19,7 +19,8 @@ tags:
 
 すると ``NextActivity.cs`` ができます。
 
-```csharp NextActivity.cs
+```csharp
+//NextActivity.cs
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +58,8 @@ Android本家だと今はウィザードで Javaソース、レイアウトXML�
 
 画面遷移は本家と同じく Intent を使います。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 button.Click += (sender, e) =>
 {
     // Goto NextActivity
@@ -73,7 +75,8 @@ button.Click += (sender, e) =>
 さて、画面遷移時にデータを渡すという、よくある処理をやってみたいと思います。
 データは ``Card`` というクラスにします。
 
-```csharp Card.cs
+```csharp
+//Card.cs
 namespace HelloXamarinAndroid
 {
     class Card
@@ -114,7 +117,8 @@ Free 版はプログラムのサイズに制限があるのですが、アセン
 Card クラスを、``IParcelable`` を実装するのと共に ``Java.Lang.Object`` から派生させます。
 あーそういうことですか。
 
-```csharp Card.cs
+```csharp
+//Card.cs
 namespace HelloXamarinAndroid
 {
     class Card  : Java.Lang.Object, IParcelable
@@ -157,7 +161,8 @@ namespace HelloXamarinAndroid
 
 これらを実装すると、 Card クラスはこうなります。
 
-```csharp Card.cs
+```csharp
+//Card.cs
 using Java.Interop;
 
 namespace HelloXamarinAndroid
@@ -222,7 +227,8 @@ namespace HelloXamarinAndroid
 
 まず渡す方。Intent に詰めます。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 button.Click += (sender, e) =>
 {
     var card = new Card("amay", "987-654-3321");
@@ -237,7 +243,8 @@ button.Click += (sender, e) =>
 
 次に取り出す方。Intent から取り出します。
 
-```csharp NextActivity.cs
+```csharp
+//NextActivity.cs
 namespace HelloXamarinAndroid
 {
     [Activity (Label = "NextActivity")]

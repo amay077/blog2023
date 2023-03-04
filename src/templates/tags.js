@@ -12,7 +12,7 @@ dayjs.extend(utc);
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
-    console.log(`render ~ posts:`, posts);
+    // console.log(`render ~ posts:`, posts);
     // const postLinks = posts.map((post) => (
     //   <li key={post.node.fields.slug}>
     //     <Link to={post.node.fields.slug}>

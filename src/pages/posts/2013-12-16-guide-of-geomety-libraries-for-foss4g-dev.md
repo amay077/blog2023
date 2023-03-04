@@ -115,7 +115,8 @@ Xamarin Studio に Nuget を導入する手順は、
 
 こんな感じです。
 
-```csharp Program.cs
+```csharp
+//Program.cs
 using System;
 using GeoAPI.Geometries;
 using NetTopologySuite;

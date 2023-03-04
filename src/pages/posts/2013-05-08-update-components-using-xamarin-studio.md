@@ -30,7 +30,8 @@ tags:
 更新後、意気揚々と以前作ったサンプルをビルドしてみたらビルドエラーが。
 どうやら ``MapView.AddMarker`` や ``MarkerOption`` が無くなって、``Marker`` に MapView を設定するように変更されたらしい。(以下は、さっきのアドバンスドなサンプルからの抜粋)
 
-```csharp PartOfMarkersViewController.cs
+```csharp
+//PartOfMarkersViewController.cs
 public override void ViewDidLoad ()
 {
 	base.ViewDidLoad ();

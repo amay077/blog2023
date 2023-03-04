@@ -25,7 +25,8 @@ Xamarin.Forms では、LinearLayout に相当するレイアウトとして [Sta
 
 ``StackLayout`` を ``Orientation = Horizontal`` とし、``Children`` にボタンを3つ配置しています。ボタンの幅は全て ``HorizontalOptions = FillAndExpand`` とします。
 
-```csharp App.cs
+```csharp
+//App.cs
 public class App
 {
     public static Page GetMainPage()
@@ -87,7 +88,8 @@ public class App
 ``Grid`` に1行3列の表を定義します。
 列の定義 ``ColumnDefinition`` で幅を ``new GridLength(1, GridUnitType.Star)`` としているのは、「3列とも同じ比率の幅とする」ことを意味しています。(ということは比率を2:1:1にしたければ、最初の列だけ``2``にすればOKです)
 
-```csharp App.cs
+```csharp
+//App.cs
 public class App
 {
     public static Page GetMainPage()

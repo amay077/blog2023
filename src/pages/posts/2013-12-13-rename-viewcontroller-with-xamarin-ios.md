@@ -46,7 +46,8 @@ $ git status
 
 それから、``MainViewController`` のコンストラクタで、リテラルに xib の名称を指定しているのでそこも修正します。
 
-```csharp MainViewController.cs
+```csharp
+//MainViewController.cs
 namespace RenameTest
 {
     public partial class MainViewController : UIViewController

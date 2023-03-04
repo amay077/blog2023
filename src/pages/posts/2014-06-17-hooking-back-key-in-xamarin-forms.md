@@ -21,7 +21,8 @@ Xamarin.Forms による画面１(MainPage)、２(SecondPage)があり、MainPage
 
 まず画面１と２はこんな感じ。ボタンを押したら画面２へ遷移するだけ。
 
-```csharp Pages.cs
+```csharp
+//Pages.cs
 // 画面１
 public class MainPage : ContentPage
 {
@@ -58,7 +59,8 @@ public class SecondPage : ContentPage
 ここからが本題。
 まず Android側のエントリポイントである ``MainActivity.cs`` は以下のように、``ContentPage`` プロパティを設ける。そして ``OnBackPressed`` メソッドを override して、MainPage だったら OnBackPressed を親へ伝搬する。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 [Activity(Label = "ScrollTest.Android.Android", MainLauncher = true)]
 public class MainActivity : AndroidActivity
 {
@@ -90,7 +92,8 @@ public class MainActivity : AndroidActivity
 次に、MainActivity.ContentPage への設定を行うコードは以下の通り。
 PageRenderer を拡張して ExportRenderer することで、すべての Page にフックをかけ、Page の表示時に MainActivity.ContentPage に設定する。
 
-```csharp MyPageRenderer.cs
+```csharp
+//MyPageRenderer.cs
 using System;
 using Xamarin.Forms.Platform.Android;
 using Android.App;

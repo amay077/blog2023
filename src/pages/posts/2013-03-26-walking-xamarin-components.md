@@ -79,7 +79,8 @@ Xamarin Studio での AndroidManifest.xml 編集については、
 
 Getting Started のコードをコピペで。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 <省略>
 using Xamarin.Controls;
 

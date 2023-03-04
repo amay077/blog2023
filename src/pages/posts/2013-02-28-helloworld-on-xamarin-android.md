@@ -41,7 +41,8 @@ C# - Android - Android Ice Cream Sandwitch Application を選択。
 
 ソースを見てみましょう。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 using System;
 
 using Android.App;

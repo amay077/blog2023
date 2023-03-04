@@ -23,7 +23,8 @@ Xamarin.Android での Google Maps API v2 の使い方は、手前味噌なが�
 
 SampleMapActivity.cs の、[ここら辺](https://github.com/xamarin/monodroid-samples/blob/master/MapsAndLocationDemo_v2/SimpleMapDemo/SampleMapActivity.cs#L88) に以下のコードを挿入します。
 
-```csharp SampleMapActivity.cs
+```csharp
+//SampleMapActivity.cs
 var ICELAND = new LatLng(64.88, -18.32);
 var LIBREVILLE = new LatLng(0.401, 9.459);
 

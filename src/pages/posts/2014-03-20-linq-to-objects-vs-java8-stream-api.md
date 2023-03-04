@@ -94,7 +94,7 @@ Enumerable.Range(0, 10)
   .ToList().ForEach(Console.WriteLine);
 ```
 
-```java Java
+```java
 Arrays.asList(0,1,2,3,4,5,6,7,8,9).stream()
   .filter(x -> x % 2 == 0)
   .sorted((x, y) -> y - x)
@@ -117,7 +117,7 @@ Enumerable.Range(1, 5)
   .ToList().ForEach(Console.WriteLine);
 ```
 
-```java Java
+```java
 Arrays.asList(1,2,3,4,5).stream()
   .flatMap(x -> IntStream.range(x * 10, x * 10 + x).boxed())
   .forEach(System.out::println);
@@ -143,7 +143,7 @@ Enumerable.Range(1, 10)
   .ToList().ForEach(Console.WriteLine);
 ```
 
-```java Java
+```java
 // 無限リストでも limit あるから大丈夫
 Stream.iterate(1, x-> x++)
   .skip(3)

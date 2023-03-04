@@ -37,7 +37,8 @@ Xamarin.Android では最初は AndroidManifest.xml は存在しないのです�
 
 こんなかんじ。
 
-```csharp MyApplication.cs
+```csharp
+//MyApplication.cs
 namespace HelloXamarinAndroiid
 {
     [Application] // この属性が必要らしい

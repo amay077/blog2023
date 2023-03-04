@@ -65,7 +65,8 @@ Xamarin Studio で、YMapBinding プロジェクトに ``libYMapKit.a`` を追�
 
 Binding プロジェクトにある ``ApiDefinition.cs`` を以下のように書き換えます。
 
-```csharp ApiDefinition.cs
+```csharp
+//ApiDefinition.cs
 using System;
 using System.Drawing;
 using MonoTouch.ObjCRuntime;
@@ -87,7 +88,8 @@ namespace YMapBinding
 
 次に ``libYMapKit.linkwith.cs`` を開いて、以下のように書き換えます。
 
-```csharp libYMapKit.linkwith.cs
+```csharp
+//libYMapKit.linkwith.cs
 using System;
 using MonoTouch.ObjCRuntime;
 
@@ -115,7 +117,8 @@ YMapApp プロジェクトを右クリックして、スタートアッププロ
 
 YMapApp のビューコントローラ(たぶん YMapAppViewController)の``ViewDidLoad`` に、以下のように追記します。
 
-```csharp YMapAppViewController.cs
+```csharp
+//YMapAppViewController.cs
 public override void ViewDidLoad()
 {
     base.ViewDidLoad();

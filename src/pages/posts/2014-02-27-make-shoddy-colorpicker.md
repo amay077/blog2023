@@ -79,7 +79,8 @@ public class MainActivity extends Activity {
 
 本題とまったく関係ありませんが、同じものを Xamarin.Android で作ると、こうなります。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 [Activity(Label = "ColorPickerSample", MainLauncher = true)]
 public class MainActivity : Activity
 {

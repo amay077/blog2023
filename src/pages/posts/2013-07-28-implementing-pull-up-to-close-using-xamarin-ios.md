@@ -24,7 +24,8 @@ WebView なんですが、一番下までスクロールして、さらに上に
 
 UIWebView でやってますが、ScrollView なコントロールならだいたい同じ感じでいけるんじゃないかと思います。
 
-```csharp PullUpToCloseSampleViewController.cs
+```csharp
+//PullUpToCloseSampleViewController.cs
 public partial class PullUpToCloseSampleViewController : UIViewController
 {
     public PullUpToCloseSampleViewController() : base ("PullUpToCloseSampleViewController", null)

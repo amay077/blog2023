@@ -60,7 +60,8 @@ Outlets とは、「UI要素と関連づいた変数」、Actions は「イベ�
 という行が追加されました。
 ここで一旦 Xcode を保存して、Xamarin Studio に戻り(Xcodeは終了しなくてOK)、``HelloWorld_iPhoneViewController.designer.cs`` を開いてみてみると、、、
 
-```csharp HelloWorld_iPhoneViewController.designer.cs
+```csharp
+//HelloWorld_iPhoneViewController.designer.cs
 using MonoTouch.Foundation;
 
 namespace HelloWorld_iPhone
@@ -106,7 +107,8 @@ namespace HelloWorld_iPhone
 
 これは Partial クラスですから、もう ``HelloWorld_iPhoneViewController.cs`` でもボタンやアクションが使えるはずです。早速実装してみます。
 
-```csharp HelloWorld_iPhoneViewController.cs
+```csharp
+//HelloWorld_iPhoneViewController.cs
 namespace HelloWorld_iPhone
 {
     public partial class HelloWorld_iPhoneViewController : UIViewController

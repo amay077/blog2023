@@ -28,7 +28,8 @@ Components で右クリック → Get more components → Reactive とかで検�
 
 ``UIButton.TouchUpInside`` を ``IObservable`` に変換する拡張メソッドを用意します。
 
-```csharp UIButtonExtensions.cs
+```csharp
+//UIButtonExtensions.cs
 public static class UIButtonExtensions
 {
     public static IObservable<string> ClickAsObservable(this UIButton button)
@@ -41,7 +42,8 @@ public static class UIButtonExtensions
 
 で、こんなコードを書きます。
 
-```csharp MainViewController_amb.cs
+```csharp
+//MainViewController_amb.cs
 public override void ViewDidLoad()
 {
     base.ViewDidLoad();
@@ -65,7 +67,8 @@ Publish で分配して **Amb** は Button2 のクリックと Button3 のクリ
 
 Amb を Zip に変えてみます。
 
-```csharp MainViewController_zip.cs
+```csharp
+//MainViewController_zip.cs
     Button1.ClickAsObservable()
         .Publish(_ => 
             Button2.ClickAsObservable()

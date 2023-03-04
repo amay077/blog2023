@@ -17,7 +17,8 @@ tags:
 
 ``setOnClickListener`` とかリスナー系が全部 ``Event`` になっているので、複数のリスナを登録可能、削除もできます。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 protected override void OnCreate(Bundle bundle)
 {
     /** 省略 **/
@@ -48,7 +49,8 @@ void button_Click(object sender, EventArgs e)
 
 C# なら ``var`` 使わなきゃ。
 
-```csharp using_var
+```csharp
+//using_var
 Dictionary<String, Object> map = new Dictionary<Piyo, Hoge>(); // 長いよ…
 var map = new Dictionary<Piyo, Hoge>();
 
@@ -63,7 +65,8 @@ Variant じゃないですから、念の為。
 Android-Java では ``Activity.runOnUiThread`` や ``Handler.post`` って Runnable を受け取るようになっていて、大抵無名クラスにするので、長ったらしい記述になってしまいますが、Xamarin.Android では、Runnable に加えて ``Action`` も受け取ってくれ、これはラムダ式で書けるので非常にスッキリ書けます。
 Runnable にかぎらずラムダ式の恩恵は大きいのですが(イベントハンドラとか)。
 
-```csharp UsingLambdaInsteadOfRunnable.cs
+```csharp
+//UsingLambdaInsteadOfRunnable.cs
 var button = FindViewById<Button>(Resource.Id.myButton);
 
 button.Click += (s, e) =>
@@ -90,7 +93,8 @@ button.Click += (s, e) =>
 
 ちょっと話がそれますが、``Activity.runOnUiThread`` 自体、Android 固有の API なので、プラットフォーム依存を減らそうと思ったら ``SynchronizationContext`` を使います。
 
-```csharp UsingSynchronizationContext.cs
+```csharp
+//UsingSynchronizationContext.cs
 var button = FindViewById<Button>(Resource.Id.myButton);
 
 var syncContext = SynchronizationContext.Current;
@@ -115,7 +119,8 @@ button.Click += (s, e) =>
 それはそうと上のコード、async/await を使ったらたったの3行ですよ！
 Android の ``AsyncTask`` とか、iOS の GCD とか、ほぼ捨てられますよ。
 
-```csharp UsingAsyncAwait.cs
+```csharp
+//UsingAsyncAwait.cs
 var button = FindViewById<Button>(Resource.Id.myButton);
 
 button.Click += async (sender, e) => 

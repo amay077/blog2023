@@ -17,7 +17,7 @@ tags:
 
 Blocks を使います。
 
-```objc Obj-C
+```objc
 int x = 1;
 __block int y = 2;
 
@@ -42,7 +42,7 @@ dispatch_async(q_global, ^{
 
 匿名クラスです。
 
-```java Java
+```java
 int x = 1;
 final int y = 2;
 
@@ -67,7 +67,7 @@ Obj-C の ``self`` にあたる ``this`` は匿名クラス内では、その匿
 
 ラムダ式です。
 
-```csharp C#
+```csharp
 int x = 1;
 const int y = 2;
 Task.Factory.StartNew(() => 

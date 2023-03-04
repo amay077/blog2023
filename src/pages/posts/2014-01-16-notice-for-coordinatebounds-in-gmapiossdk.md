@@ -29,7 +29,7 @@ bounds.Including(new CLLocationCoordinate2D(35d, 135d));
 
 正しくはこう。
 
-```csharp 
+```csharp
 var bounds = new CoordinateBounds(
     new CLLocationCoordinate2D(34d, 134d),
     new CLLocationCoordinate2D(33d, 133d));

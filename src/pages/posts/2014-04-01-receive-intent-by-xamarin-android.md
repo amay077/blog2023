@@ -30,7 +30,8 @@ tags:
 
 Xamarin.Android では、Activity のソースファイルの属性として、以下のように書く。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 [Activity(Label = "MainActivity", MainLauncher = true)]
 [IntentFilter (new []{ Intent.ActionSend }, 
   Categories = new []{ Intent.CategoryDefault },

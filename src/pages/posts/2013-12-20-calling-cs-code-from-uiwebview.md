@@ -16,7 +16,8 @@ tags:
 <!--more-->
 ## サンプル
 
-```csharp MainViewController.cs
+```csharp
+//MainViewController.cs
 
 /* in MainViewController.designer.cs
 [Outlet]

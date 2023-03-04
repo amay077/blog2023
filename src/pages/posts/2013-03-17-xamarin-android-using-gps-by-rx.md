@@ -10,7 +10,8 @@ tags:
 ---
 RxM4A により [Reactive Extensions が使えるようになった](http://amay077.github.com/blog/2013/03/01/how-to-use-rx-in-xamarin/) ので、以前に [Android+reactive4Java でやったコレ](http://amay077.github.com/blog/2012/10/03/locate-using-reactive4java/) を Xamarin.Android でやってみます。
 <!--more-->
-```csharp LocationManager.Extenstion.cs
+```csharp
+//LocationManager.Extenstion.cs
 namespace Amay077.Android.Locations
 {
     static class LocationManagerExtenstion
@@ -81,7 +82,8 @@ namespace Amay077.Android.Locations
 
 さて使う方。
 
-```csharp Howtouse.cs
+```csharp
+//Howtouse.cs
 using Amay077.Android.Locations; // 拡張メソッドを使えるように
 
 <省略>

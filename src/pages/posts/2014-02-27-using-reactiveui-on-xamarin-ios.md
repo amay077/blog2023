@@ -44,7 +44,8 @@ Starter-Core-xxx は、ディレクトリ的には同じ場所にあり、Androi
 
 サンプルで用意されてる ViewModel を見てみます。
 
-```csharp TestViewModel.cs
+```csharp
+//TestViewModel.cs
 using System;
 using ReactiveUI;
 using System.Runtime.Serialization;
@@ -128,7 +129,8 @@ ViewModel→View だけでなく、View→ViewModel もやってみましょう�
 プロパティは ``MyName`` とします。
 初期値として "Enter your name" とでも設定しましょうか。 
 
-```csharp TestViewModel.cs
+```csharp
+//TestViewModel.cs
 namespace Starter.Core.ViewModels
 {
     [DataContract]

@@ -26,7 +26,8 @@ Xamarin.Forms で定義した ``Label`` は、iOS では ``UILabel`` となる�
 
 まずは Forms側の MySecondPage.cs を修正。
 
-```csharp MySecondPage.cs
+```csharp
+//MySecondPage.cs
 public class MySecondPage : ContentPage
 {
     public Label MyLabel { get; private set; }
@@ -57,7 +58,8 @@ public class MySecondPage : ContentPage
 
 次に iOS側に MyLabelRenderer.cs を作成。
 
-```csharp MyLabelRenderer.cs
+```csharp
+//MyLabelRenderer.cs
 using System;
 using Xamarin.Forms;
 using Forms2Native;

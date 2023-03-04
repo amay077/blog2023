@@ -46,7 +46,8 @@ Xamarin Studio のシステムメニュー → アップデートをチェック
 
 まず何も考えず同期処理で書くと、、、
 
-```csharp sync.cs
+```csharp
+//sync.cs
 // ボタンが押されたよ
 private void button1_Click(Object sender, EventArgs e)
 {
@@ -82,7 +83,8 @@ async/await については、ググればたくさん情報が出てきます�
 
 さて、先ほどのプログラムを、async/await 構文を使って非同期化してみます。
 
-```csharp async.cs
+```csharp
+//async.cs
 // ボタンが押されたよ
 private async void button1_Click(Object sender, EventArgs e)
 {
@@ -133,7 +135,9 @@ Android で非同期処理と言えば ``AsyncTask`` がよく紹介されてま
 まず、AsyncTask を拡張して、HeavyCalc をバックグラウンドで実行する ``HeavyCalcTask`` を用意します。
 ``OnPreExecute`` と ``OnPostExecute`` でボタンを無効/有効 にしています。
 
-```csharp HeavyCalcTask.cs
+**HeavyCalcTask.cs**
+
+```csharp
 // HeavyCalc を非同期で実行する AsyncTask
 class HeavyCalcTask : Android.OS.AsyncTask
 {
@@ -167,7 +171,9 @@ class HeavyCalcTask : Android.OS.AsyncTask
 
 使う方は、まあ普通に。
 
-```csharp asynctask_execute.cs
+**asynctask_execute.cs**
+
+```csharp
 // ボタンが押されたよ
 private async void button1_Click(Object sender, EventArgs e)
 {

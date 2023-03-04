@@ -40,7 +40,8 @@ Forms アプリを Android で動かして回転させると、なんと **RootP
 
 こんな感じっすね。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 [Activity(MainLauncher = true, 
     ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation )]
 public class MainActivity : AndroidActivity
@@ -60,7 +61,8 @@ iOS なら ``NavigationPage.SetHasNavigationBar(page, false)`` としてしま�
 iOS は白基調、Androidは黒基調なので、Forms側で ``TextColor = Color.Black`` などとすると、当たり前だが Android で見えない。
 iOS はスタイル変えるのしんどいので、Android側の Theme を ``Theme.Holo.Light`` にしとく。
 
-```csharp MainActivity.cs
+```csharp
+//MainActivity.cs
 [Activity(Label = "MyApp",  
  MainLauncher = true, 
  Theme = "@android:style/Theme.Holo.Light")]

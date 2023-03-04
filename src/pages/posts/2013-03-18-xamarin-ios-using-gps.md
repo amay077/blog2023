@@ -15,7 +15,9 @@ Xamarin.iOS で GPS を使ってみます。
 * [GPSを利用する方法 - プログラミングノート](http://d.hatena.ne.jp/ntaku/20090228/1235816377)
 
 
-```csharp LocationSample.cs
+**LocationSample.cs**
+
+```csharp
 // LocationManager 的なやつ
 private CLLocationManager _man = null;
 

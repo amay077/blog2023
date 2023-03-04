@@ -23,7 +23,8 @@ MyButton.TouchUpInside += (s, e) => MyButton.SetTitle("Clicked!", UIControlState
 
 これを FromEventPattern を使うとこう書けます。
 
-```csharp DoesNotWorkOnDevice.cs
+```csharp
+//DoesNotWorkOnDevice.cs
 Observable.FromEventPattern(MyButton, "TouchUpInside")
 .Subscribe(x => MyButton.SetTitle("Clicked!", UIControlState.Normal));
 ```
@@ -47,7 +48,8 @@ Xamarin.iOS では実機で動作させないと安心ならないと言われ�
 
 さて、このケースでは、FromEventPattern の別なオーバーロードを使うことで解決です。
 
-```csharp WorkOnDevice.cs
+```csharp
+//WorkOnDevice.cs
 Observable.FromEventPattern(
   h => MyButton.TouchUpInside+=h, 
   h => MyButton.TouchUpInside-=h)

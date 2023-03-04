@@ -56,7 +56,8 @@ Rx は、非同期処理やイベントコールバックを一直線なスト�
 
 実際には動かない空想のコードを掲載していたので、実機で動作したコードに書き換えました。
 
-```csharp FindTheMonkeyViewController_after.cs
+```csharp
+//FindTheMonkeyViewController_after.cs
 if (!UserInterfaceIdiomIsPhone)
 {
   /* 省略 */
@@ -82,7 +83,8 @@ if (!UserInterfaceIdiomIsPhone)
 }
 ```
 
-```csharp CLLocationManagerExtensions.cs
+```csharp
+//CLLocationManagerExtensions.cs
 public static class CLLocationManagerExtensions
 {
   // リージョン監視を開始して、開始通知を IObservable で得る拡張メソッド

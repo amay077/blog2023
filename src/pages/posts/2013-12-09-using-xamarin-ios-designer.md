@@ -115,7 +115,8 @@ TextField を選択して、プロパティビューの Name に ``text1 `` と�
 
 すると、``DetailViewController.designer.cs`` にプロパティ ``text1`` が作成されています。
 
-```csharp DetailViewController.designer.cs
+```csharp
+//DetailViewController.designer.cs
 using MonoTouch.Foundation;
 using System.CodeDom.Compiler;
 
@@ -153,7 +154,8 @@ Button を選択して、プロパティビューを表示し、上部にある�
 
 そこに、TextField の内容を Label に表示するコードを書きましょう。
 
-```csharp DetailViewController.cs
+```csharp
+//DetailViewController.cs
 namespace UIDesignerTest
 {
     public partial class DetailViewController : UIViewController

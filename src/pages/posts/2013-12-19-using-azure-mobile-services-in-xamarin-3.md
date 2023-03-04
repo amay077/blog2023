@@ -59,14 +59,16 @@ Xamarin Studio で、前回のサンプルを開いてコードを追加して�
 
 ``AppDelegate.cs`` に、端末を識別するためのIDを保持するプロパティを作ります。
 
-```csharp AppDelegate.cs
+```csharp
+//AppDelegate.cs
 public string DeviceToken { get; set; }
 ```
 
 ``ToDoItem.cs`` にも同じく DeviceToken を追加します。
 が、説明にある ``[DataMember…`` は間違いです。正しくは ``[JsonProperty…`` です。
 
-```csharp ToDoItem.cs
+```csharp
+//ToDoItem.cs
 ×[DataMember(Name = "deviceToken")]
 [JsonProperty(PropertyName = "deviceToken")]
 public string DeviceToken { get; set; }
@@ -74,7 +76,8 @@ public string DeviceToken { get; set; }
 
 再び ``AppDelegate.cs`` に戻って、アプリが起動完了した時に、APNS サーバにアプリを登録するコードを追加します。
 
-```csharp AppDelegate.cs
+```csharp
+//AppDelegate.cs
 public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
 {
     UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | 
@@ -90,7 +93,8 @@ public override bool FinishedLaunching(UIApplication application, NSDictionary l
 **ここが2つ目のハマりポイントです。**
 ``deviceToken.Description`` を使用していますが、これは iOSネイティブと異なり **空白入りの文字列を返す** ようです。そのためそのまま DeviceToken として利用すると、通知が来ません。エラーにもならないので原因究明に数時間要しました…。``Replace`` で空白も取り除きます。
 
-```csharp AppDelegate.cs
+```csharp
+//AppDelegate.cs
 public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
 {
     string trimmedDeviceToken = deviceToken.Description;
@@ -106,7 +110,8 @@ public override void RegisteredForRemoteNotifications(UIApplication application,
 
 そして、``AppDelegate.cs`` に、プッシュ通知受信時のコードを書きます。
 
-```csharp AppDelegate.cs
+```csharp
+//AppDelegate.cs
 public override void ReceivedRemoteNotification(UIApplication application, NSDictionary userInfo)
 {
     Debug.WriteLine(userInfo.ToString());
@@ -124,7 +129,8 @@ public override void ReceivedRemoteNotification(UIApplication application, NSDic
 
 最後に ``QSTodoListViewController.cs`` の ``OnAdd`` を次のように変更して、追加するデータに DeviceToken を含めるようにします。この値を使って、Azure 側でプッシュ通知を送ります。
 
-```csharp QSTodoListViewController.cs
+```csharp
+//QSTodoListViewController.cs
 var deviceToken = ((AppDelegate)UIApplication.SharedApplication.Delegate).DeviceToken;
 
 var newItem = new ToDoItem() 
