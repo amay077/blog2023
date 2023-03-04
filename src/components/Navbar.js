@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
 import twitter from "../img/social/twitter.svg";
+import logo from "../img/logo.svg";
+import useSiteMetadata from "./SiteMetadata";
 
-export default class Navbar extends React.Component {
+const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -114,3 +116,5 @@ export default class Navbar extends React.Component {
     );
   }
 };
+
+export default Navbar;

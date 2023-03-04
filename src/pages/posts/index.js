@@ -6,7 +6,7 @@ import Pagination from "../../components/Pagination";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
-const BlogIndexPage = ({ data, pageContext }) => {
+export const BlogIndexPage = ({ data, pageContext }) => {
   const { edges: posts } = data.allMarkdownRemark
   const { totalCount } = data.allMarkdownRemark
 
@@ -38,7 +38,7 @@ const BlogIndexPage = ({ data, pageContext }) => {
     </Layout>
   )
 };
-// export default BlogIndexPage;
+export default BlogIndexPage;
 
 BlogIndexPage.propTypes = {
   data: PropTypes.shape({
