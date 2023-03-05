@@ -4,6 +4,7 @@ title: Jekyll から Eleventy に移行した
 date: 2021-01-12T15:00:00.000Z
 tags:
   - Jekyll
+  - SSG
   - Eleventy
   - Ruby
   - JavaScript
