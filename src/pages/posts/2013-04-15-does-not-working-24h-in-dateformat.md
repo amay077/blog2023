@@ -9,7 +9,8 @@ tags:
 Android には ``android.text.format.DateFormat`` というユーティリティクラスがあるのですが、これの ``format`` メソッド、時刻の24時間形式に対応してません。
 <!--more-->
 
-```java DateTimeFormatTest.java
+```java 
+//DateTimeFormatTest.java
 long t = System.currentTimeMillis();
 Log.d("By DateFormat", DateFormat.format("HH:mm", t));
 Log.d("By SimpleDateFormat", new SimpleDateFormat("HH:mm").format(new Date(t)));

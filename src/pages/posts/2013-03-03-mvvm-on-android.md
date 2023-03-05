@@ -19,7 +19,8 @@ MVVM + Messenger パターンとは、
 
 とりあえずこんな感じになると思われる。
 
-```java common_interfaces
+```java
+//common_interfaces
 public interface Message {
 }
 
@@ -28,7 +29,8 @@ public interface Action1<T> {
 }
 ```
 
-```java Messenger.java
+```java
+//Messenger.java
 public final class Messenger {
 	
 	private Map<String, Action1<? extends Message>> _actions = 
@@ -61,7 +63,8 @@ Action<Message> を溜める時に、Message をキーにして Map に入れて
 
 しかしいろいろ試していたら、こんな方法で文字列としては取り出すことができました。
 
-```java Messenger.java
+```java
+//Messenger.java
 public final class Messenger {
 	
 	private Map<String, Action1<? extends Message>> _actions = 
@@ -95,7 +98,8 @@ public final class Messenger {
 ``_actions.get(nameOfMessage)`` で取り出した ``Action1<? extend Message>`` は、invoke メソッドの型が ``null`` になってて、使えませんでした。
 なので仕方なく、Generics パラメータなしの ``Action1`` で受けることに。
 
-```java Messenger.java
+```java
+//Messenger.java
 public final class Messenger {
 	
 	private Map<String, Action1<? extends Message>> _actions = 
@@ -148,7 +152,8 @@ public final class Messenger {
 ##使い方
 だいたいこんな感じで使える。
 
-```java usage
+```java
+//usage
 /** ダイアログを表示させるメッセージ */
 public class DialogMessage implements Message {
 	public String message;

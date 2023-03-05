@@ -24,7 +24,8 @@ Google Maps Android API v1 では Overlay をレイヤのように使うこと�
 
 の順で ```GoogleMap``` に追加しています。
 
-```java NoZindex.java
+```java
+//NoZindex.java
 final LatLng TOKYO = new LatLng(35.691, 139.693);
 final LatLng NAGOYA = new LatLng(35.1805, 136.9073);
 final LatLng TOYOHASHI = new LatLng(34.770, 137.391);
@@ -77,7 +78,8 @@ mMap.addPolygon(new PolygonOptions()
 
 次に zIndex を次のように設定してみます。
 
-```java WithZindex.java
+```java
+//WithZindex.java
 // マーカー
 mMap.addMarker(new MarkerOptions()
 	.position(new LatLng(35.47, 138.71))

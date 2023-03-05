@@ -12,7 +12,8 @@ tags:
 
 の派生品です。ファイルパスを出力するだけにしました。
 
-```js enumFilesRecursive.js
+```javascript
+//enumFilesRecursive.js
 var fs = require("fs")
     , path = require("path")
     , dir = process.argv[2] || '.'; //引数が無いときはカレントディレクトリを対象とする

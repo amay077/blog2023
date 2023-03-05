@@ -17,7 +17,8 @@ Google Map Android API v2 では、指定した範囲にいいかんじにズー
 
 GoogleMap v2 を使ったよくあるコード。
 
-```java MainActivity.java
+```java
+//MainActivity.java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -65,7 +66,8 @@ StackOverflow さまに載ってた。
 
 これによると ``view.post(new Runnable() { … })`` のタイミングでも OK らしいので、今回はこれを使ってみる。
 
-```java MainActivity.java
+```java
+//MainActivity.java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

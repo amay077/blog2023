@@ -33,7 +33,8 @@ Raspberry Pi のUSBポートは２つしかないのに、GUIでのWiFi設定を
 
 GUIのWiFi設定ツールで設定した後の ``wpa_supplicant.conf`` はこんな感じになっていました。
 
-```json wpa_supplicant.conf
+```json
+//wpa_supplicant.conf
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 

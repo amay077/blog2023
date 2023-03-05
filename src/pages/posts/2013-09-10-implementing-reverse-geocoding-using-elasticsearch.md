@@ -56,7 +56,8 @@ Elasticsearch へ投入できるデータ形式は JSON なので、ダウンロ
 
 試しに1行取り出して、JSON を整形（見やすいよう適宜省略）してみると次のようになります。
 
-```javascript town.json
+```javascript
+//town.json
 {
     "type": "Feature",
     "properties": {

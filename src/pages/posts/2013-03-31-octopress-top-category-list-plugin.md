@@ -20,7 +20,8 @@ tags:
 ## サイドバーに TopCategoryList を表示するための HTML を用意する
 自分の octopress リポジトリの ``source/_includes/custom/asides/`` に ``top_category_list.html`` というファイルを作成、内容は以下のようにする。
 
-```html top_category_list.html
+```html
+//top_category_list.html
 <section>
   <h1>Top Categories</h1>
     <ul id="top-category-list">{% raw  %}{% top_category_list counter:true %}{% endraw %}</ul>
@@ -32,7 +33,8 @@ tags:
 
 以下のように変更する
 
-```yml _config.yml
+```yml
+//_config.yml
 # [変更]custom/asides/top_category_list.html を任意の位置に挿入する
 default_asides: [custom/asides/about.html, asides/recent_posts.html, custom/asides/top_category_list.html]
 

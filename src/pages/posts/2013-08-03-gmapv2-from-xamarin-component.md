@@ -81,7 +81,8 @@ namespace GoogleMapV2Sample
 
 画面定義である ``Main.axml`` も以下のように置き換えます。
 
-```xml Resources/layout/Main.axml
+```xml
+//Resources/layout/Main.axml
 <?xml version="1.0" encoding="utf-8"?>
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/map"
@@ -102,7 +103,8 @@ namespace GoogleMapV2Sample
 
 ※1 のところは、最初に決めた Package名に、※2 の時は、先に取得しておいた API key に置き換えてください。
 
-```xml Properties/AndroidManifest.xml
+```xml
+//Properties/AndroidManifest.xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:versionCode="1" 

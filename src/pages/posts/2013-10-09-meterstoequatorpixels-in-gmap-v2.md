@@ -12,7 +12,8 @@ Google Map API v1 には、「地図上の距離(ｍ)を画面上の距離(ピ�
 <!--more-->
 ので、以下のような代替関数を作ってみました。
 
-```java metersToEquatorPixels.java
+```java
+//metersToEquatorPixels.java
 public static int metersToEquatorPixels(GoogleMap map, LatLng base, float meters) {
 	final double OFFSET_LON = 0.5d;
 	

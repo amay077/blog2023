@@ -31,7 +31,8 @@ The Android system calls this when the connection to the service is unexpectedly
 
 条件は、startService した後、bindService の第2引数を ``Context.BIND_AUTO_CREATE`` ではなく ``0`` にすること。
 
-```java StartService.java
+```java
+//StartService.java
 Intent intent = new Intent(context, TestService.class);
 
 final ServiceConnection conn = new ServiceConnection() {

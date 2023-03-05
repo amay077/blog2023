@@ -8,7 +8,8 @@ tags:
 タイトルの通りです。
 <!--more-->
 
-```java enum
+```java
+//enum
 public enum MyTypes {
 	One,
 	Two,
@@ -17,11 +18,13 @@ public enum MyTypes {
 ```
 
 
-```java put
+```java
+//put
 intent.putExtra("hoge",MyType.Two);
 ```
 
-```java get
+```java
+//get
 MyTypes t = (MyTypes)intent.getSerializableExtra("hoge");
 ```
 

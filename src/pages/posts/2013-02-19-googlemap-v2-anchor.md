@@ -17,21 +17,24 @@ Marker の既定の画像は、よく見るピンみたいなやつですが、�
 
 以下のように、設定値を変更すると、それぞれマーカーの表示位置が変わります。(Android SDK に同梱される Google Maps API v2 のサンプルをベースにしています)
 
-```java anchor_center_bottom.java
+```java
+//anchor_center_bottom.java
 mAdelaide = mMap.addMarker(new MarkerOptions()
 	.position(ADELAIDE)
     .title("Adelaide")
     .snippet("Population: 1,213,000")
     .anchor(0.5f, 1.0f)); // 既定値と同じ
 ```
-```java anchor_left_top.java
+```java
+//anchor_left_top.java
 mAdelaide = mMap.addMarker(new MarkerOptions()
 	.position(ADELAIDE)
     .title("Adelaide")
     .snippet("Population: 1,213,000")
     .anchor(0.0f, 0.0f)); // 左上
 ```
-```java anchor_right_middle.java
+```java
+//anchor_right_middle.java
 mAdelaide = mMap.addMarker(new MarkerOptions()
 	.position(ADELAIDE)
     .title("Adelaide")

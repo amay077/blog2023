@@ -79,7 +79,8 @@ Prelude> putStrLn "Hello, World"
 
 [10分で学ぶHaskell - HaskellWiki](http://www.haskell.org/haskellwiki/10%E5%88%86%E3%81%A7%E5%AD%A6%E3%81%B6Haskell) にあった REPL じゃなくてソースをビルドして実行する方法でエラーが。
 
-```hs Test.hs
+```hs
+//Test.hs
 main = do putStrLn "What is 2 + 2?"
           x <- readLn
           if x == 4

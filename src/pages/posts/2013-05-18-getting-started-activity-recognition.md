@@ -39,7 +39,8 @@ Ecplise の Import で ``{your sdk location}/extras/google/google_play_services/
 
 行動認識結果は IntentService で受け取ります。そのためのクラス ``ReceiveRecognitionIntentService`` を作成します。
 
-```java ReceiveRecognitionIntentService.java
+```java
+//ReceiveRecognitionIntentService.java
 package com.example.activityrecognizingsample;
 
 import android.app.IntentService;
@@ -64,7 +65,8 @@ public class ReceiveRecognitionIntentService extends IntentService {
 あと、ReceiveRecognitionIntentService も忘れずに追加しておきます。
 細かいところでは、MainActivity の画面の向きを縦（Portrait）に固定しておきます。試している時に画面の向きが変わると面倒なので。
 
-```xml AndroidManifest.xml
+```xml
+//AndroidManifest.xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.activityrecognizingsample"
@@ -124,7 +126,8 @@ public class ReceiveRecognitionIntentService extends IntentService {
 
 では全コードをどうぞ。
 
-```java MainActivity.jara
+```java
+//MainActivity.jara
 package com.example.activityrecognizingsample;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -289,7 +292,8 @@ public class MainActivity extends Activity {
 }
 ```
 
-```java ReceiveRecognitionIntentService.java
+```java
+//ReceiveRecognitionIntentService.java
 package com.example.activityrecognizingsample;
 
 import com.google.android.gms.location.ActivityRecognitionResult;

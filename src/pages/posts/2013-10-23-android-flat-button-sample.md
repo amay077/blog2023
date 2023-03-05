@@ -8,7 +8,8 @@ tags:
 Foursquare の Android 版をマネて、XML だけで作ってみた。
 仕組みをすぐ忘れるので、ここにメモしておく。
 <!--more-->
-```xml flat_panel.xml
+```xml
+//flat_panel.xml
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@+id/padding">
@@ -58,7 +59,8 @@ Foursquare の Android 版をマネて、XML だけで作ってみた。
 
 上のファイル ``flat_panel.xml`` を、``res/drawable`` ディレクトリに入れて、適用したい Button などに↓のように設定。
 
-```xml part_of_activity_main.xml
+```xml
+//part_of_activity_main.xml
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

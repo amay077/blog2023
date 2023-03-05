@@ -13,7 +13,8 @@ tags:
 
 <!--more-->
 
-```java LocationFunctions.java
+```java
+//LocationFunctions.java
 /**
  * 位置を取得し続ける(finish は呼ばれない)
  */

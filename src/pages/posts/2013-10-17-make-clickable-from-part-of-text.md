@@ -7,7 +7,8 @@ tags:
 ---
 Android の TextView で、「テキストの一部を押すとなんかのアクションが起こる」というのが ``ClickableSpan`` というのを使えばできそうだったので、やってみました。
 <!--more-->
-```java ClikcableSpanTestActivity.java
+```java
+//ClikcableSpanTestActivity.java
 public class ClikcableSpanTestActivity extends Activity {
 	@Override
     protected void onCreate(Bundle savedInstanceState) {

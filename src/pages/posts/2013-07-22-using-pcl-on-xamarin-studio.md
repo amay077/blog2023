@@ -70,7 +70,8 @@ cp bin/Debug/NuGet.Core.dll  ~/Library/Application\ Support/XamarinStudio-4.0/Lo
 
 ポータブルクラスライブラリのプロジェクトファイル(xxx.csproj) をテキストエディタで開き、``<TargetFrameworkProfile>`` の値を ``Profile104`` に書き換える。(修正前は Profile1 になってた。なぜ Profile104 かと言えば、Visual Studio で作った PCL プロジェクトのプロファイルが 104 だったから、という程度の理解レベル)
 
-```xml xxx.csproj
+```xml
+//xxx.csproj
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>

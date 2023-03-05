@@ -11,7 +11,8 @@ tags:
 
 普通の Android アプリ開発だと ``AndroidManifest.xml`` にこう書く。
 
-```xml AndroidManifest.xml
+```xml
+//AndroidManifest.xml
 <activity
   android:name="com.example.intenttest.MainActivity"
   android:label="@string/app_name" >

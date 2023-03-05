@@ -26,7 +26,8 @@ Elasticsearch は、オープンソースの全文検索エンジンです。Apa
 
 下のようなスキーマのデータを登録して検索する想定です。
 
-```javascript venue_example.json
+```javascript
+//venue_example.json
 {
     "name" : "Tokyo St",
     "pin" : {

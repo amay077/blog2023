@@ -20,7 +20,8 @@ GoogleMap は[メルカトル図法](http://ja.wikipedia.org/wiki/%E3%83%A1%E3%8
 
 やり方は以下のとおりで、```geodesic``` を ```true``` にすれば大圏コースになります。
 
-```java GeodesicPolyline.java
+```java
+//GeodesicPolyline.java
 GoogleMap mMap;
 
 final LatLng TOKYO = new LatLng(35.691, 139.693);

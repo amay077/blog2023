@@ -21,7 +21,8 @@ Android 開発でボタンを意図的に重ねたい時ってあんまりない
 
 LinearLayout で横並びにする場合。
 
-```xml main.xml
+```xml
+//main.xml
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="30dp"
@@ -67,7 +68,8 @@ LinearLayout の Zorder は、並び順と連動してしまうので、右（�
 
 普通に RelativeLayout で、「BはAの右、CはBの右」と制約をつけてみます。
 
-```xml main.xml
+```xml
+//main.xml
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="30dp">
@@ -107,7 +109,8 @@ LinearLayout の Zorder は、並び順と連動してしまうので、右（�
 
 その１の制約はそのままに、XML上での並び順を C、B、A に変えてみましょう。
 
-```xml main.xml
+```xml
+//main.xml
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="30dp">

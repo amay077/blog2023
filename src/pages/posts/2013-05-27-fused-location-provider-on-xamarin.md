@@ -27,7 +27,8 @@ Android SDK の Google Play Service をアップデートしても、Xamarin 側
 
 その設定は ``Transform/Metadata.xml`` にあるので、これを以下のように設定します。
 
-```xml Metadata.xml
+```xml
+//Metadata.xml
 <metadata>
 	<remove-node path="/api/package[@name='com.google.android.gms.maps']/class[@name='GoogleMapOptionsCreator']" />
 	<remove-node path="/api/package[@name!='com.google.android.gms.maps' 

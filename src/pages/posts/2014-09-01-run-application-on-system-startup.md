@@ -18,7 +18,8 @@ Android OS の起動が終わると ``android.intent.action.BOOT_COMPLETED`` が
 ブロードキャストを捕まえたときに呼ばれるコード。``MyActivity`` を開始している。BroadcastReceiver から Activity を開始するには ``Intent.FLAG_ACTIVITY_NEW_TASK`` が必要なので注意。
 
 
-```java StartupReceiver.java
+```java
+//StartupReceiver.java
 public class StartupReceiver extends BroadcastReceiver {
     private static final String TAG = "StartupReceiver";
 
@@ -37,7 +38,8 @@ public class StartupReceiver extends BroadcastReceiver {
 ``StartupReceiver`` を登録する。
 忘れちゃいけないのが ``android.permission.RECEIVE_BOOT_COMPLETED`` による権限の設定。これがないと受信できない。
 
-```xml AndroidManifest.xml
+```xml
+//AndroidManifest.xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.amay077.reboottest" >

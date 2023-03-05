@@ -29,7 +29,8 @@ tags:
 2. ``updateLayoutParams`` はスクリーン座標を前提に。元は ``listView.getTop() + event.getY()`` でしたが、これではステータスバーとActionBarの高さが考慮されないようだったので、``event.getRawY()`` を使うようにしました。
 
 
-```java SortableListView.java
+```java
+//SortableListView.java
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

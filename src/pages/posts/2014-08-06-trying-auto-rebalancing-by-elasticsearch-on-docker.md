@@ -55,7 +55,8 @@ elasticsearch-head については、こちらがとても参考になりまし�
 [ root@bb638d1f825f:/ ]$ vim elasticsearch/config/elasticsearch.yml
 ```
 
-```json elasticsearch.yml
+```json
+//elasticsearch.yml
 cluster.name: amaycluster
 ```
 

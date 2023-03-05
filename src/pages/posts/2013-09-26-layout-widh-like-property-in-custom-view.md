@@ -14,7 +14,8 @@ http://techbooster.org/android/application/7361/)
 
 で、``android:layout_width`` のマネをするには、 attrs.xml に以下のように書く。
 
-```xml attrs.xml
+```xml
+//attrs.xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <declare-styleable name="MyCustomView">
@@ -33,7 +34,8 @@ Android Framework のソースコードにこう書いてあったので、真�
 
 自作ビューの実装クラスで、この値を読み込む時は、``TypedArray.getLayoutDimension`` を使う。
 
-```java MyCustomView.java
+```java
+//MyCustomView.java
 public MyCustomView(Context context, AttributeSet attrs) {
     super(context, attrs);
     

@@ -93,7 +93,8 @@ Google Map API には他の地図データを Overlay（重ねあわせ）する
 
 HTML+Javascript のソースコードはこんな感じ([Geekなぺーじ:Google MAPS JavaScript APIの単純な例](http://www.geekpage.jp/web/google-maps-api/v3/helloworld.php) を参考にさせて頂きました)
 
-```html google.html
+```html
+//google.html
 <!DOCTYPE html>
 <html>
   <head>
@@ -139,7 +140,8 @@ HTML+Javascript のソースコードはこんな感じ([Geekなぺーじ:Google
 変更箇所は「←」で、追加箇所は「↓↓」「↑↑」で示しています。
 [gist](https://gist.github.com/amay077/6928205/revisions) でも diff を見られます。
 
-```html gsi_map.html
+```html
+//gsi_map.html
 <!DOCTYPE html>
 <html>
   <head>

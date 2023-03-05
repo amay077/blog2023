@@ -16,7 +16,8 @@ Xamarin.Android では最初は AndroidManifest.xml は存在しないのです�
 
 んで、\<application> タグに ``android:name`` 属性を追記します。ここは Android本家と同じ要領です。
 
-```xml AndroidManifest.xml
+```xml
+//AndroidManifest.xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
     android:versionCode="1" android:versionName="1.0" package="HelloXamarinAndroiid.HelloXamarinAndroiid">

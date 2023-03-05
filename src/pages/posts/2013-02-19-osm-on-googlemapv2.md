@@ -118,7 +118,8 @@ TileProvider は文字通り [Tile](https://developers.google.com/maps/documenta
 仕方ががないので、独自の TileProvider を別途用意して、UrlTileProvider を内包する形で ``TransparencyUrlTileProvider`` というクラスを実装します。
 
 
-```java TransparencyUrlTileProvider.java
+```java
+//TransparencyUrlTileProvider.java
 public class TransparencyUrlTileProvider implements TileProvider {
 	private static final String OSM_MAP_URL_FORMAT = "http://tile.openstreetmap.org/%d/%d/%d.png";
 
@@ -157,7 +158,8 @@ public class TransparencyUrlTileProvider implements TileProvider {
 
 使う側は、こんな感じになります。
 
-```java OsmTileOverlayDemoActivity.java
+```java
+//OsmTileOverlayDemoActivity.java
 private GoogleMap mMap;
 
 private void setUpMap() {
@@ -192,7 +194,8 @@ Tile.bM の byte[] から Bitmap インスタンスを生成します。
 
 * [Android: Bitmap の背景を透明にする - 入隠者通信 ～病を嗜む～](http://d.hatena.ne.jp/hypercrab/20110730/1312038162)
 
-```java makeTransparentBmp.java
+```java
+//makeTransparentBmp.java
 private static Bitmap makeTransparentBmp(final Bitmap bmp, int transparency) {
      int width = bmp.getWidth();
      int height = bmp.getHeight();
@@ -216,7 +219,8 @@ private static Bitmap makeTransparentBmp(final Bitmap bmp, int transparency) {
 
 では TODO の所に組み込みます。
 
-```java TransparencyUrlTileProvider.java
+```java
+//TransparencyUrlTileProvider.java
 public class TransparencyUrlTileProvider implements TileProvider {
 
     <前略>

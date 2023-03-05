@@ -47,7 +47,8 @@ Fused Location Provider を使うのには今まで通り、``ACCESS_FINE_LOCATI
 
 LocationClient は、指定した PERMISSION に応じてよしなに動いてくれるそうです。
 
-```xml AndroidManifest.xml
+```xml
+//AndroidManifest.xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fusedlocationprovidersample"
@@ -96,7 +97,8 @@ connect を呼ぶ -> ConnectionCallbacks.onConnected がコールバックされ
 
 では、全コードです。
 
-```java MainActivity.java
+```java
+//MainActivity.java
 package com.example.fusedlocationprovidersample;
 
 import com.google.android.gms.common.ConnectionResult;

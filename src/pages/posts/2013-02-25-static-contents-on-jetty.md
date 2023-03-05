@@ -42,7 +42,8 @@ $ mkdir htdocs
 
 適当な HTML を htdocs に入れる。
 
-``` html ~/dev/sdks/jetty-8.1.9/htdocs/index.html
+``` html
+//~/dev/sdks/jetty-8.1.9/htdocs/index.html
 <!DOCTYPE html>
 <html lang="ja">
 <body>
@@ -57,7 +58,8 @@ $ mkdir htdocs
 
 handler の設定のところに ResourceHandler のブロックを入れる
 
-``` xml jetty_static.xml
+``` xml
+//jetty_static.xml
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
 

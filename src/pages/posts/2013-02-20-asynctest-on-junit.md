@@ -15,7 +15,8 @@ tags:
 
 2013.1.10 修正:メソッドに全部 ``synchronized`` つけたら動かんやん、恥ずかし…
 
-```java FutureResult.java
+```java 
+//FutureResult.java
 /**
  * success または error が呼ばれるまで get() で待ってる Future みたいなクラス
  * 
@@ -79,7 +80,8 @@ public class FutureResult<T> {
 Future インターフェースを implements しようと思ったけど数が多くてやめたｗ
 使い方はこんな感じ。
 
-```java AsyncMethodTest.java
+```java 
+//AsyncMethodTest.java
 public void testAsyncMethod() {
 	final FutureResult<Integer> result = new FutureResult<Integer>();
 	

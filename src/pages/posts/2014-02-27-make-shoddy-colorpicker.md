@@ -11,7 +11,8 @@ Android で「定められた色リストから１つ選択する」ダイアロ
 
 ``AlertDialog`` には自作の ``Adapter`` が設定できるので、「項目値を背景色にする Adapter」を作って設定すれば OK でした。
 
-```java MainActivity.java
+```java
+//MainActivity.java
 public class MainActivity extends Activity {
 	final private Integer[] _colors = { Color.RED, Color.BLUE, Color.GREEN }; // 色リスト
 	final int ID_COLOR_PICKER = 1;
