@@ -3,8 +3,6 @@ templateKey: blog-post
 title: Good bye MVP
 date: 2022-07-21T13:32:26.282Z
 description: " "
-featuredpost: false
-featuredimage: /img/coffee-gear.png
 tags:
   - MVP
 ---

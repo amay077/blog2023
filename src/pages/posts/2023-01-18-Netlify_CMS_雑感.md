@@ -3,8 +3,6 @@ templateKey: blog-post
 title: Netlify CMS 雑感
 date: 2023-01-18T13:48:55.941Z
 description: CMS としての機能がいまいち。
-featuredpost: false
-featuredimage: /img/apple-touch-icon.png
 tags:
   - CMS
   - Netlify

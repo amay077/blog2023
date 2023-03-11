@@ -6,7 +6,7 @@ import Pagination from "../../components/Pagination";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
-export const BlogIndexPage = ({ data, pageContext }) => {
+const BlogIndexPage = ({ data, pageContext }) => {
   const { edges: posts } = data.allMarkdownRemark
   const { totalCount } = data.allMarkdownRemark
 
@@ -73,17 +73,6 @@ export const pageQuery = graphql`
             templateKey
             date
             tags
-            featuredpost
-            featuredimage {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 120
-                  quality: 100
-                  layout: CONSTRAINED
-                )
-
-              }
-            }
           }
         }
       }
@@ -91,11 +80,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
         heading
         subheading
         mainpitch {
@@ -104,14 +88,6 @@ export const pageQuery = graphql`
         }
         description
         intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
           heading
           description
         }

@@ -3,8 +3,6 @@ templateKey: blog-post
 title: Blog を Netlify CMS に移行中
 date: 2022-07-20T13:44:28.818Z
 description: " "
-featuredpost: false
-featuredimage: /img/apple-touch-icon.png
 tags:
   - CMS
   - Netlify

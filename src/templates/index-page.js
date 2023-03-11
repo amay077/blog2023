@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
@@ -110,17 +109,6 @@ export const pageQuery = graphql`
             templateKey
             date
             tags
-            featuredpost
-            featuredimage {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 120
-                  quality: 100
-                  layout: CONSTRAINED
-                )
-
-              }
-            }
           }
         }
       }
@@ -141,14 +129,6 @@ export const pageQuery = graphql`
         }
         description
         intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
           heading
           description
         }
