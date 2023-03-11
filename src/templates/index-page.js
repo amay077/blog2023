@@ -91,7 +91,7 @@ export default IndexPage;
 export const pageQuery = graphql`
   query IndexPageTemplate {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: {date: DESC} }
       filter: { 
         frontmatter: { templateKey: { eq: "blog-post" } } 
         fields: { tagslower: { nin: ["draft"] } }

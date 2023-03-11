@@ -104,7 +104,7 @@ export const tagPageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: {date: DESC} }
       filter: { 
         fields: { tagslower: { 
           in: [$tag] 

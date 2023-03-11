@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
+import github from "../img/social/github-icon.svg";
 import twitter from "../img/social/twitter.svg";
-import logo from "../img/logo.svg";
-import useSiteMetadata from "./SiteMetadata";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -78,12 +76,6 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/about">
                 About
               </Link>
-              {/* <Link className="navbar-item" to="/contact">
-                Contact
-              </Link> */}
-              {/* <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link> */}
             </div>
             <div className="navbar-end has-text-centered">              
               <a

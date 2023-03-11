@@ -29,7 +29,7 @@ XAML に Margin や Padding （いわゆる ``Thickness``）をリテラルで�
 </ContentPage>
 ```
 
-![](/img/posts/xamarin_forms_margin_definition_01.png)
+![](img/xamarin_forms_margin_definition_01.png)
 
 **「"左" をスタートに時計まわり」** と覚えておきたい。
 

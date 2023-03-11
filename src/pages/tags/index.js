@@ -50,7 +50,7 @@ export const tagPageQuery = graphql`
       limit: 1000
       filter: { fields: { tagslower: { nin: ["draft"] } } }
     ) {
-      group(field: fields___tagslower) {
+      group(field: {fields: {tagslower: SELECT}}) {
         fieldValue
         totalCount
       }
