@@ -122,10 +122,6 @@ export const pageQuery = graphql`
           }
         }
         subheading
-        description
-        intro {
-          description
-        }
       }
     }
   }

@@ -81,11 +81,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subheading
-        description
-        intro {
-          heading
-          description
-        }
       }
     }
   }
