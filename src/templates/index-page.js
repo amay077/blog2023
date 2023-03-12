@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
                     <BlogRoll posts={posts} />
                     <div className="column is-12 has-text-centered">
                       <Link to="/posts">
-                        <button class="button is-primary">
+                        <button className="button is-primary">
                           Read more
                         </button>
                       </Link>
