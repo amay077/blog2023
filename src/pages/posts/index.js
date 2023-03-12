@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 
-// import Pagination from "../../components/Pagination";
+import Pagination from "../../components/Pagination";
 // import PropTypes from "prop-types";
 import ArchiveRoll from "../../components/ArchiveRoll";
 
@@ -31,7 +31,7 @@ const BlogIndexPage = ({ data, pageContext }) => {
         <div className="container">
           <div className="content">
             <ArchiveRoll posts={posts} />
-            {/* <Pagination page={pageContext.page ?? 1} size={20} totalCount={totalCount} /> */}
+            <Pagination page={pageContext.page ?? 1} size={20} totalCount={totalCount} />
           </div>
         </div>
       </section>
