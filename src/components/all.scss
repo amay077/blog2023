@@ -140,3 +140,11 @@ a:hover {
   }
 }
 
+.tag:not(body) {
+  display: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: inherit;
+  padding-left: inherit;
+  padding-right: inherit;
+}
