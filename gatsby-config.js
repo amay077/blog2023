@@ -5,7 +5,6 @@ module.exports = {
     origin: "https://blog.amay077.net",    
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
     },

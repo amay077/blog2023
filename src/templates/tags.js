@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import dayjs from 'dayjs'
@@ -12,15 +11,6 @@ dayjs.extend(utc);
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
-    // console.log(`render ~ posts:`, posts);
-    // const postLinks = posts.map((post) => (
-    //   <li key={post.node.fields.slug}>
-    //     <Link to={post.node.fields.slug}>
-    //       <h3 className="is-size-5">{post.node.frontmatter.title}</h3>
-    //     </Link>
-    //   </li>
-    // ));
-
     const postLinks = posts.map((p) => {
       const post = p.node;
       const dateFormatted = dayjs(post?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
@@ -72,7 +62,6 @@ class TagRoute extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
           <div className="container content">
             <div className="columns">
               <div
