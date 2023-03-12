@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
@@ -19,7 +19,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  helmet,
+  // helmet,
   date,
 }) => {
   const PostContent = contentComponent || Content;
@@ -27,7 +27,7 @@ export const BlogPostTemplate = ({
 
   return (
     <section className="section">
-      {helmet || ""}
+      {/* {helmet || ""} */}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -62,7 +62,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
+  // helmet: PropTypes.object,
 };
 
 const BlogPost = ({ data }) => {
@@ -77,11 +77,11 @@ const BlogPost = ({ data }) => {
         excerpt={post.excerpt}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate={`%s | ${siteTitle}`}>
-            <title>{`${post.frontmatter.title}`}</title>
-          </Helmet>
-        }
+        // helmet={
+        //   <Helmet titleTemplate={`%s | ${siteTitle}`}>
+        //     <title>{`${post.frontmatter.title}`}</title>
+        //   </Helmet>
+        // }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
