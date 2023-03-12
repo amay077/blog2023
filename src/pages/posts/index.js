@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 
 // import Pagination from "../../components/Pagination";
 // import PropTypes from "prop-types";
-// import ArchiveRoll from "../../components/ArchiveRoll";
+import ArchiveRoll from "../../components/ArchiveRoll";
 
 const BlogIndexPage = ({ data, pageContext }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -30,7 +30,7 @@ const BlogIndexPage = ({ data, pageContext }) => {
       <section className="" style={{ marginBottom: '40px', marginLeft: '20px', marginRight: '20px' }}>
         <div className="container">
           <div className="content">
-            {/* <ArchiveRoll posts={posts} /> */}
+            <ArchiveRoll posts={posts} />
             {/* <Pagination page={pageContext.page ?? 1} size={20} totalCount={totalCount} /> */}
           </div>
         </div>
