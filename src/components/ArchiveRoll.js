@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
-import dayjs from 'dayjs'
-import timezone from "dayjs/plugin/timezone";
-import utc from "dayjs/plugin/utc";
+// import dayjs from 'dayjs'
+// import timezone from "dayjs/plugin/timezone";
+// import utc from "dayjs/plugin/utc";
 
-dayjs.extend(timezone);
-dayjs.extend(utc);
+// dayjs.extend(timezone);
+// dayjs.extend(utc);
 
 export const ArchiveRoll = ({ posts }) => {
 
   return (
   <div className="columns is-multiline">
     {(posts ?? []).map(({ node: post }) => { 
-      const dateFormatted = dayjs(post?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
+      const dateFormatted = post?.frontmatter?.date
       const tags = post.frontmatter?.tags ?? [];
 
       return (

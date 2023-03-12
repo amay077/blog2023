@@ -1,10 +1,10 @@
 import * as React from "react";
-
-import Layout from "../../components/Layout";
-import ArchiveRoll from "../../components/ArchiveRoll";
-import Pagination from "../../components/Pagination";
-import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import Layout from "../../components/Layout";
+
+// import Pagination from "../../components/Pagination";
+// import PropTypes from "prop-types";
+// import ArchiveRoll from "../../components/ArchiveRoll";
 
 const BlogIndexPage = ({ data, pageContext }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -30,8 +30,8 @@ const BlogIndexPage = ({ data, pageContext }) => {
       <section className="" style={{ marginBottom: '40px', marginLeft: '20px', marginRight: '20px' }}>
         <div className="container">
           <div className="content">
-            <ArchiveRoll posts={posts} />
-            <Pagination page={pageContext.page ?? 1} size={20} totalCount={totalCount} />
+            {/* <ArchiveRoll posts={posts} /> */}
+            {/* <Pagination page={pageContext.page ?? 1} size={20} totalCount={totalCount} /> */}
           </div>
         </div>
       </section>
@@ -40,13 +40,13 @@ const BlogIndexPage = ({ data, pageContext }) => {
 };
 export default BlogIndexPage;
 
-BlogIndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-};
+// BlogIndexPage.propTypes = {
+//   data: PropTypes.shape({
+//     markdownRemark: PropTypes.shape({
+//       frontmatter: PropTypes.object,
+//     }),
+//   }),
+// };
 
 
 export const pageQuery = graphql`
