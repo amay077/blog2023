@@ -1,15 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import useSiteMetadata from "../components/SiteMetadata";
-import dayjs from 'dayjs'
-import timezone from "dayjs/plugin/timezone";
-import utc from "dayjs/plugin/utc";
+// import dayjs from 'dayjs'
+// import timezone from "dayjs/plugin/timezone";
+// import utc from "dayjs/plugin/utc";
 
-dayjs.extend(timezone);
-dayjs.extend(utc);
+// dayjs.extend(timezone);
+// dayjs.extend(utc);
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -21,7 +21,8 @@ export const BlogPostTemplate = ({
   date,
 }) => {
   const PostContent = contentComponent || Content;
-  const dateFormatted = dayjs(date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
+  // const dateFormatted = dayjs(date).format('YYYY/MM/DD HH:mm:ss(+9:00)-')
+  const dateFormatted = date;
 
   return (
     <section className="section">
@@ -54,12 +55,12 @@ export const BlogPostTemplate = ({
   );
 };
 
-BlogPostTemplate.propTypes = {
-  content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-};
+// BlogPostTemplate.propTypes = {
+//   content: PropTypes.node.isRequired,
+//   contentComponent: PropTypes.func,
+//   description: PropTypes.string,
+//   title: PropTypes.string,
+// };
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -81,11 +82,11 @@ const BlogPost = ({ data }) => {
   );
 };
 
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-};
+// BlogPost.propTypes = {
+//   data: PropTypes.shape({
+//     markdownRemark: PropTypes.object,
+//   }),
+// };
 
 export default BlogPost;
 
