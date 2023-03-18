@@ -4,12 +4,12 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import useSiteMetadata from "../components/SiteMetadata";
-// import dayjs from 'dayjs'
-// import timezone from "dayjs/plugin/timezone";
-// import utc from "dayjs/plugin/utc";
+import dayjs from 'dayjs'
+import timezone from "dayjs/plugin/timezone";
+import utc from "dayjs/plugin/utc";
 
-// dayjs.extend(timezone);
-// dayjs.extend(utc);
+dayjs.extend(timezone);
+dayjs.extend(utc);
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -21,8 +21,8 @@ export const BlogPostTemplate = ({
   date,
 }) => {
   const PostContent = contentComponent || Content;
-  // const dateFormatted = dayjs(date).format('YYYY/MM/DD HH:mm:ss(+9:00)-')
-  const dateFormatted = date;
+  const dateFormatted = dayjs(date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
+  // const dateFormatted = date;
 
   return (
     <section className="section">
