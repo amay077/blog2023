@@ -1,19 +1,13 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import dayjs from 'dayjs'
-import timezone from "dayjs/plugin/timezone";
-import utc from "dayjs/plugin/utc";
-
-dayjs.extend(timezone);
-dayjs.extend(utc);
 
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map((p) => {
       const post = p.node;
-      const dateFormatted = dayjs(post?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
+      const dateFormatted = post?.fields?.date_jst;
       const tags = post.frontmatter?.tags ?? [];
       return (
         <div className="is-parent mb-4" key={post.id}>
@@ -106,6 +100,7 @@ export const tagPageQuery = graphql`
         node {
           fields {
             slug
+            date_jst
           }
           frontmatter {
             title

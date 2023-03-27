@@ -1,6 +1,12 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const dayjs = require('dayjs');
+const timezone = require("dayjs/plugin/timezone");
+const utc = require("dayjs/plugin/utc");
+
+dayjs.extend(timezone);
+dayjs.extend(utc);
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -100,11 +106,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
-    createNodeField({
-      name: `slug1`,
-      node,
-      value,
-    })
 
     const tags = (node?.frontmatter?.tags ?? []).map(x => x.toLowerCase());
     createNodeField({
@@ -112,5 +113,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value: tags,
     })
+
+    const dateJst = dayjs(node?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')    
+    createNodeField({
+      name: `date_jst`,
+      node,
+      value: dateJst,
+    })
+
   }
 }

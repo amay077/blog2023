@@ -99,6 +99,7 @@ export const pageQuery = graphql`
           id
           fields {
             slug
+            date_jst
           }
           frontmatter {
             title

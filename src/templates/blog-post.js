@@ -1,15 +1,8 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import useSiteMetadata from "../components/SiteMetadata";
-import dayjs from 'dayjs'
-import timezone from "dayjs/plugin/timezone";
-import utc from "dayjs/plugin/utc";
-
-dayjs.extend(timezone);
-dayjs.extend(utc);
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -18,12 +11,11 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  date,
+  dateJst,
 }) => {
   const PostContent = contentComponent || Content;
-  const dateFormatted = dayjs(date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
-  // const dateFormatted = date;
-
+  const dateFormatted = dateJst; 
+  
   return (
     <section className="section">
       <div className="container content">
@@ -55,13 +47,6 @@ export const BlogPostTemplate = ({
   );
 };
 
-// BlogPostTemplate.propTypes = {
-//   content: PropTypes.node.isRequired,
-//   contentComponent: PropTypes.func,
-//   description: PropTypes.string,
-//   title: PropTypes.string,
-// };
-
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
   const siteMetadata = useSiteMetadata();
@@ -77,16 +62,11 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
+        dateJst={post.fields.date_jst}
       />
     </Layout>
   );
 };
-
-// BlogPost.propTypes = {
-//   data: PropTypes.shape({
-//     markdownRemark: PropTypes.object,
-//   }),
-// };
 
 export default BlogPost;
 
@@ -101,6 +81,9 @@ export const pageQuery = graphql`
         title
         description
         tags
+      }
+      fields {
+        date_jst
       }
     }
   }

@@ -1,18 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import dayjs from 'dayjs'
-import timezone from "dayjs/plugin/timezone";
-import utc from "dayjs/plugin/utc";
-
-dayjs.extend(timezone);
-dayjs.extend(utc);
 
 export const BlogRoll = ({ posts }) => {
 
   return (
   <div className="columns is-multiline">
     {(posts ?? []).map(({ node: post }) => { 
-      const dateFormatted = dayjs(post?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')
+      const dateFormatted = post?.fields?.date_jst;
       const tags = post.frontmatter?.tags ?? [];
 
       return (
@@ -59,7 +53,5 @@ export const BlogRoll = ({ posts }) => {
       )})}
   </div>)
 };
-
-
 
 export default BlogRoll;
