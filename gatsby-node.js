@@ -114,7 +114,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value: tags,
     })
 
-    const dateJst = dayjs(node?.frontmatter?.date).format('YYYY/MM/DD HH:mm:ss(+9:00)')    
+    const dateJst = dayjs(node?.frontmatter?.date).tz('Asia/Tokyo').format('YYYY/MM/DD HH:mm:ss(+9:00)')    
     createNodeField({
       name: `date_jst`,
       node,
