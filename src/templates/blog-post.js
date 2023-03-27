@@ -5,7 +5,7 @@ import Content, { HTMLContent } from "../components/Content";
 import useSiteMetadata from "../components/SiteMetadata";
 
 // eslint-disable-next-line
-export const BlogPostTemplate = ({
+const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -15,7 +15,7 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
   const dateFormatted = dateJst; 
-  
+
   return (
     <section className="section">
       <div className="container content">
@@ -68,6 +68,14 @@ const BlogPost = ({ data }) => {
   );
 };
 
+export const Head = () => {
+  <>
+    <title>Gatsby Head API - blogpost</title>
+    <meta name="description" content="Gatsby Head API Example" />
+    <meta name="awesometag" content="Gatsby Head API Example" />
+  </>
+}
+
 export default BlogPost;
 
 export const pageQuery = graphql`
@@ -79,7 +87,6 @@ export const pageQuery = graphql`
       frontmatter {
         date
         title
-        description
         tags
       }
       fields {

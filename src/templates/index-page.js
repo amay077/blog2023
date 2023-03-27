@@ -8,7 +8,7 @@ import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
-export const IndexPageTemplate = ({
+const IndexPageTemplate = ({
   image,
   title,
   subheading,
@@ -80,6 +80,14 @@ IndexPage.propTypes = {
     }),
   }),
 };
+
+export const Head = () => {
+  <>
+    <title>Gatsby Head API</title>
+    <meta name="description" content="Gatsby Head API Example" />
+    <meta name="awesometag" content="Gatsby Head API Example" />
+  </>
+}
 
 export default IndexPage;
 
