@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import useSiteMetadata from "../components/SiteMetadata";
+import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 const BlogPostTemplate = ({
@@ -68,15 +69,48 @@ const BlogPost = ({ data }) => {
   );
 };
 
-export const Head = () => {
-  <>
-    <title>Gatsby Head API - blogpost</title>
-    <meta name="description" content="Gatsby Head API Example" />
-    <meta name="awesometag" content="Gatsby Head API Example" />
-  </>
-}
 
 export default BlogPost;
+
+export const Head = (arg) => {
+  const { title, description, origin } = useSiteMetadata();
+  const pageTitle = arg.data.markdownRemark.frontmatter.title ?? 'no title';
+  const excerpt = (arg.data.markdownRemark.frontmatter.excerpt ?? description ?? 'no desc').substring(0, 100);
+
+  return <>
+    <title>{`${pageTitle} - ${title}`}</title>
+    <meta name="description" content={`${excerpt}`} />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href={`${withPrefix("/")}img/favicon-32x32.png`}
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href={`${withPrefix("/")}img/favicon-16x16.png`}
+      sizes="16x16"
+    />
+
+    <link
+      rel="mask-icon"
+      href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
+      color="#ff4400"
+    />
+    <meta name="theme-color" content="#fff" />
+
+    <meta property="og:site_name" content={`${title}`} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={`${pageTitle} - ${title}`} />
+    <meta property="og:description" content={`${excerpt}`} />
+    <meta property="og:image" content={`${origin}/img/og-image.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@amay077" />    
+
+  </>
+}
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {

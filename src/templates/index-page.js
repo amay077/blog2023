@@ -6,6 +6,8 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import useSiteMetadata from "../components/SiteMetadata";
+import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 const IndexPageTemplate = ({
@@ -81,15 +83,45 @@ IndexPage.propTypes = {
   }),
 };
 
-export const Head = () => {
-  <>
-    <title>Gatsby Head API</title>
-    <meta name="description" content="Gatsby Head API Example" />
-    <meta name="awesometag" content="Gatsby Head API Example" />
+export default IndexPage;
+
+export const Head = (arg) => {
+  const { title, description, origin } = useSiteMetadata();
+
+  return <>
+    <title>{`${title}`}</title>
+    <meta name="description" content={`${description}`} />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href={`${withPrefix("/")}img/favicon-32x32.png`}
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href={`${withPrefix("/")}img/favicon-16x16.png`}
+      sizes="16x16"
+    />
+
+    <link
+      rel="mask-icon"
+      href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
+      color="#ff4400"
+    />
+    <meta name="theme-color" content="#fff" />
+
+    <meta property="og:site_name" content={`${title}`} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={`${title}`} />
+    <meta property="og:description" content={`${description}`} />
+    <meta property="og:image" content={`${origin}/img/og-image.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@amay077" />    
+
   </>
 }
-
-export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
