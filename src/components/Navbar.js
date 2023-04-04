@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/social/github-icon.svg";
-import twitter from "../img/social/twitter.svg";
+import mastodon from "../img/social/mastodon.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -91,12 +91,12 @@ const Navbar = class extends React.Component {
 
               <a
                 className="navbar-item"
-                href="https://twitter.com/amay077"
+                href="https://mastodon.cloud/@amay077"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  <img src={twitter} alt="Twitter" />
+                  <img src={mastodon} alt="Mastodon" />
                 </span>
               </a>
 
