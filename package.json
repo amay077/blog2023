@@ -39,10 +39,11 @@
   "scripts": {
     "clean": "gatsby clean",
     "start": "npm run develop",
-    "build": "npm run clean && gatsby build",
+    "build": "npm run clean && npm run replace && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "replace": "sh replace_absolute_image_url.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
