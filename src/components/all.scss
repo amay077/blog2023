@@ -140,6 +140,8 @@ a:hover {
   }
 }
 
+// disable code hilight styles -----
+
 .tag:not(body) {
   display: inherit;
   font-size: inherit;
@@ -148,3 +150,9 @@ a:hover {
   padding-left: inherit;
   padding-right: inherit;
 }
+
+.number {
+  all: unset; 
+}
+
+// ----- disable code hilight styles
