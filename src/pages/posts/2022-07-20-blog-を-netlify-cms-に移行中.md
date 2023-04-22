@@ -8,7 +8,7 @@ tags:
   - Netlify
   - Markdown
   - SSG
-  - gatbyjs
+  - gatsbyjs
 ---
 性懲りもなく、また Blog のフレームワークを移行している。
 
