@@ -40,17 +40,21 @@ const BlogIndexPage = ({ data, pageContext }) => {
 };
 export default BlogIndexPage;
 
-// BlogIndexPage.propTypes = {
-//   data: PropTypes.shape({
-//     markdownRemark: PropTypes.shape({
-//       frontmatter: PropTypes.object,
-//     }),
-//   }),
-// };
-
+export const Head = ({ data }) => {
+  const { title, description } = data.site.siteMetadata;
+  return <>
+    <title>{`Archives - ${title}`}</title>
+    <meta name="description" content={`${description}`} />
+  </>
+}
 
 export const pageQuery = graphql`
   query($limit: Int = 20, $skip: Int = 0)  {
+    site {
+      siteMetadata {
+        title
+      }
+    }    
     allMarkdownRemark(
       sort: { frontmatter: {date: DESC} }
       filter: { 

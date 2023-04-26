@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import useSiteMetadata from "../components/SiteMetadata";
 
 // eslint-disable-next-line
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
@@ -52,8 +53,21 @@ AboutPage.propTypes = {
 
 export default AboutPage;
 
+export const Head = ({ data }) => {
+  const { title, description } = data.site.siteMetadata;
+  return <>
+    <title>{`About - ${title}`}</title>
+    <meta name="description" content={`${description}`} />
+  </>
+}
+
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

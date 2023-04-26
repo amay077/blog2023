@@ -37,6 +37,14 @@ const TagsPage = ({
 
 export default TagsPage;
 
+export const Head = ({ data }) => {
+  const { title, description } = data.site.siteMetadata;
+  return <>
+    <title>{`Tags - ${title}`}</title>
+    <meta name="description" content={`${description}`} />
+  </>
+}
+
 export const tagPageQuery = graphql`
   query TagsQuery {
     site {
