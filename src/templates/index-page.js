@@ -6,6 +6,7 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import useSiteMetadata from "../components/SiteMetadata";
 import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
@@ -84,8 +85,8 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-export const Head = ({ data }) => {
-  const { title, description } = data.site.siteMetadata;
+export const Head = (arg) => {
+  const { title, description, origin } = useSiteMetadata();
 
   return <>
     <title>{`${title}`}</title>
@@ -124,12 +125,6 @@ export const Head = ({ data }) => {
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
     allMarkdownRemark(
       sort: { frontmatter: {date: DESC} }
       filter: { 
