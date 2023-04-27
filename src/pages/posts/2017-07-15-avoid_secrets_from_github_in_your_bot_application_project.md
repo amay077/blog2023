@@ -3,11 +3,11 @@ templateKey: blog-post
 title: Bot Application のソースコードを GitHub で公開する時に秘匿情報を含めない方法
 date: 2017-07-15T00:00:00.000+09:00
 tags:
-  - BotFramework
+  - bot-framework
   - csharp
   - dotnet
-  - ASP.NET
-  - VisualStudio
+  - asp-dot-net
+  - visual-studio
 ---
 別に Bot Application に限った話ではないのですけどね。
 <!--more-->

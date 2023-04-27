@@ -4,7 +4,7 @@ title: Xamarin.Forms のバージョンを 1.2 から 2.3 に上げた時のエ�
 date: 2016-07-06T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
   - csharp
 ---
 プロジェクトで使ってる Xamarin.Forms のバージョンを「1.2.3.6257」から「2.3.0.107」に上げたら、ビルドでエラーが発生するようになった。

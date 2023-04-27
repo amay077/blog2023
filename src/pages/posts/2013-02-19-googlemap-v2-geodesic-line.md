@@ -4,7 +4,7 @@ title: Google Maps Android API v2 で大圏コースを表示する
 date: 2012-12-24T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 GoogleMap は[メルカトル図法](http://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%88%E3%83%AB%E5%9B%B3%E6%B3%95)なので、地図上の２点間を結んだ直線は最短距離になりません。(メルカトル図法で正しいのは角度だけ、でしたよね。)
 

@@ -4,7 +4,7 @@ title: Google I/O 2013 で発表された Fused Location Provider を使って�
 date: 2013-05-23T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 [Activity Recognition](http://amay077.github.io/blog/2013/05/18/getting-started-activity-recognition/) に続いて使ってみました。
 <!--more-->

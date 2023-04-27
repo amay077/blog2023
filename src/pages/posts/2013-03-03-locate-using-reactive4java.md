@@ -6,7 +6,7 @@ tags:
   - Android
   - reactive4java
   - Java
-  - ReactiveExtensions
+  - reactive-extensions
 ---
 [前回](http://qiita.com/items/07762776102dbc84b1c7)に続き、 reactive4java ネタ。
 調子に乗って Android で位置を取得し続けるのを reactive4java を使ってやってみた。

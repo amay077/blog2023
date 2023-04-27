@@ -4,7 +4,7 @@ title: Longitude の略し方。lng 派と lon 派の終わらない争い
 date: 2013-09-25T00:00:00.000+09:00
 tags:
   - Geo
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 地図上での位置は「緯度経度」で表します。英語だと「latitude, longitude」ですね。
 これらの単語、コーディングする際は短縮したいわけです。latitude は ``lat`` で全会一致です。問題は longitude 。

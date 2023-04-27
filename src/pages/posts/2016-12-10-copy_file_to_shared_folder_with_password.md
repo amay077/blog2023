@@ -3,7 +3,7 @@ templateKey: blog-post
 title: VB.NET でパスワード付き共有フォルダにファイルをコピーする
 date: 2016-12-10T00:00:00.000+09:00
 tags:
-  - VisualBasic
+  - visual-basic
 ---
 [Visual Basic Advent Calendar 2016](http://qiita.com/advent-calendar/2016/vb) 10日目です。
 「ユーザー／パスワードが必要な共有フォルダにファイルをコピーしたい」という要件がありまして。なぜかそれが Visual Basic のプログラムだったので参加してみました。

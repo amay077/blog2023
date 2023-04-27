@@ -4,7 +4,7 @@ title: Cold を Hot にできる。そう、Publish ならね。
 date: 2012-10-03T00:00:00.000+09:00
 tags:
   - Java
-  - ReactiveExtensions
+  - reactive-extensions
   - reactive4java
   - Android
 ---

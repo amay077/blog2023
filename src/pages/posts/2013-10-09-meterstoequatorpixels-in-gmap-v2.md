@@ -6,7 +6,7 @@ tags:
   - Android
   - Java
   - Geo
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 Google Map API v1 には、「地図上の距離(ｍ)を画面上の距離(ピクセル)に変換する」ためのメソッド [Projection.metersToEquatorPixels](https://developers.google.com/maps/documentation/android/v1/reference/com/google/android/maps/Projection#metersToEquatorPixels(float)) がありましたが、v2 ではなくなってしまいました。
 <!--more-->

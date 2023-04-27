@@ -5,7 +5,7 @@ date: 2016-11-11T00:00:00.000+09:00
 tags:
   - csharp
   - ズンドコキヨシ
-  - ReactiveExtensions
+  - reactive-extensions
 ---
 エンジニア立ち居振舞いには乗らないが、こういうのには乗ってしまうｗ
 <!--more-->

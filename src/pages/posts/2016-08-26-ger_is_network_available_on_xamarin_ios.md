@@ -4,7 +4,7 @@ title: Xamarin.iOS でインターネット通信が可能かを取得する
 date: 2016-08-26T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.iOS
+  - xamarin-ios
   - iOS
   - csharp
 ---

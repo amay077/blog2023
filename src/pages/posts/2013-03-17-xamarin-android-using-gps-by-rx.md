@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - csharp
-  - ReactiveExtensions
+  - reactive-extensions
 ---
 RxM4A により [Reactive Extensions が使えるようになった](http://amay077.github.com/blog/2013/03/01/how-to-use-rx-in-xamarin/) ので、以前に [Android+reactive4Java でやったコレ](http://amay077.github.com/blog/2012/10/03/locate-using-reactive4java/) を Xamarin.Android でやってみます。
 <!--more-->

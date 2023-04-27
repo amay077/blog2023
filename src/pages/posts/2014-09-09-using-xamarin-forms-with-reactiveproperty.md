@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - iOS
-  - Reactiveextensions
+  - reactive-extensions
   - ReactiveProperty
 ---
 　[Xamarin.Forms](http://www.buildinsider.net/mobile/xamarintips/0005) は、Xamarin に新たに搭載されたクロスプラットフォームUIフレームワーク＆MVVMフレームワークです。

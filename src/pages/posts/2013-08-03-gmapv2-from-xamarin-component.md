@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - csharp
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 Xamarin Components に「Google Play Services」が追加されまして。
 <!--more-->

@@ -4,7 +4,7 @@ title: Google Maps API v2 のマーカーの Anchor を探る
 date: 2013-02-19T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 
 Google Maps API の Marker には、[Anchor](https://developers.google.com/maps/documentation/android/reference/com/google/android/gms/maps/model/MarkerOptions#anchor(float, float) というプロパティがあり、緯度経度と、画像のどの位置をマッピングさせるかを設定する事ができます。

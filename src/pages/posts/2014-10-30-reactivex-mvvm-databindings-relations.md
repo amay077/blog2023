@@ -4,7 +4,7 @@ title: ReactiveX と MVVM と DataBinding の関係について図にしてみ�
 date: 2014-10-30T00:00:00.000+09:00
 tags:
   - mvvm
-  - reactiveextensions
+  - reactive-extensions
   - rxjava
   - reactivecocoa
   - xamarin

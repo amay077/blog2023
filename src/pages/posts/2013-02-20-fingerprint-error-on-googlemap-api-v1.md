@@ -4,7 +4,7 @@ title: Google Maps API Key の取得で「入力されたフィンガープリ�
 date: 2012-11-20T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 Android で Googleマップを利用する際に必ず通る道である Google Map API Key の取得。
 久しぶりに行ったら、少しハマったのでメモ。

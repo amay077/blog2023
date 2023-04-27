@@ -4,7 +4,7 @@ title: Google Maps Android API v2 の図形の描画順(zIndex)を探る
 date: 2012-12-25T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 Google Maps Android API v1 では Overlay をレイヤのように使うことで図形群の前後関係をコントロールできましたが、v2 では `Polyline` や `Polygon` クラスに `zIndex` が導入されました。
 

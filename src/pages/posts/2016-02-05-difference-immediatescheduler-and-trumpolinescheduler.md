@@ -3,7 +3,7 @@ templateKey: blog-post
 title: RxJava の ImmediateScheduler と TrampolineScheduler の違い
 date: 2016-02-05T00:00:00.000+09:00
 tags:
-  - ReactiveExtensions
+  - reactive-extensions
   - RxJava
   - ReactiveX
 ---

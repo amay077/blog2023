@@ -4,7 +4,7 @@ title: Xamarin.Forms で XAML Preview 中かどうかを判別する方法
 date: 2017-01-12T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
 ---
 Xamarin.Forms 向けのUIライブラリを提供する人向けの内容です。
 <!--more-->

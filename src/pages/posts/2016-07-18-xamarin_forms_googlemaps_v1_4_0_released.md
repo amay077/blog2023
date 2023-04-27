@@ -4,12 +4,12 @@ title: カスタムマーカーに対応した Xamarin.Forms.GoogleMaps v1.4.0 �
 date: 2016-07-18T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
   - Android
   - iOS
-  - GoogleMapsAPI
+  - google-maps-api
   - ReleaseNotes
-  - Xamarin.Forms.GoogleMaps
+  - xamarin-forms-googlemaps
 ---
 Xamarin.Forms.GoogleMaps v1.4.0 をリリースしました。
 

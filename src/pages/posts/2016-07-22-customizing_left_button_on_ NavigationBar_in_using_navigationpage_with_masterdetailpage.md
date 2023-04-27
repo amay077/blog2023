@@ -4,7 +4,7 @@ title: NavigationPage + MasterDetailPage の時に iOS の NavigationBar の左�
 date: 2016-07-22T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
   - iOS
   - csharp
 ---

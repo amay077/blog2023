@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - VisualStudio
-  - AndroidStudio
+  - android-studio
 ---
 * [Xamarin でも使える高速 Android エミュレータを簡単に作る方法(Mac編) - Qiita](http://qiita.com/amay077/items/48b7f3d5096b9677d70a)
 

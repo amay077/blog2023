@@ -4,7 +4,7 @@ title: Google Maps Android API の GoogleMap.getProjection はシングルトン
 date: 2017-07-28T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
   - Java
 ---
 Android で Google Maps を使用するときに使用する Google Maps Android API の話です。

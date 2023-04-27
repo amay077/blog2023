@@ -5,7 +5,7 @@ date: 2016-06-08T00:00:00.000+09:00
 tags:
   - Xamarin
   - Android
-  - Xamarin.Forms
+  - xamarin-forms
   - iOS
 ---
 

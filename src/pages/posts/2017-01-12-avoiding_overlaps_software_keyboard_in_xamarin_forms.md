@@ -4,7 +4,7 @@ title: Xamarin.Forms でソフトウェアキーボードが表示された時�
 date: 2017-01-12T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
   - Android
   - iOS
 ---

@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - csharp
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 だんだん自力でサンプルプログラム書くのに疲れてきたので、MonoDroid のサンプル集に頼ることにします。
 

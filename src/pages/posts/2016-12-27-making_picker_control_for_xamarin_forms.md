@@ -4,7 +4,7 @@ title: Xamarin.Forms 向けのピッカーコントロールを作った
 date: 2016-12-27T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
   - iOS
   - Android
 ---

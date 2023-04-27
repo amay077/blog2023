@@ -4,8 +4,8 @@ title: Xamarin.Forms.GoogleMaps にプルリクエストを送る会、を開催
 date: 2017-02-13T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
-  - GoogleMapsAPI
+  - xamarin-forms
+  - google-maps-api
   - git
   - GitHub
 ---

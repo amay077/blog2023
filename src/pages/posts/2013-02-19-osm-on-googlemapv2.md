@@ -4,7 +4,7 @@ title: Google Maps Android API v2 で OpenStreetMap を表示する
 date: 2012-12-26T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
   - OpenStreetMap
 ---
 

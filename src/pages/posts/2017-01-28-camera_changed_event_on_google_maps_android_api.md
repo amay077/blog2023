@@ -4,7 +4,7 @@ title: Google Maps Android API のカメラ変更イベントについて
 date: 2017-01-28T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
   - Java
 ---
 Android 向けの Google Maps ライブラリには、カメラの変更（＝位置、回転、チルトのヘ変更）時に発生するイベント ``GoogleMap.OnCameraChangeListener`` があります。

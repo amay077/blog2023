@@ -4,7 +4,7 @@ title: Xamarin Advent Calendar 2016 参加者募集中です
 date: 2016-10-27T00:00:00.000+09:00
 tags:
   - Xamarin
-  - AdventCalendar
+  - advent-calendar
 ---
 
 4年目の Xamarin Advent Calendar です。

@@ -4,7 +4,7 @@ title: Fused Location Provider を近くのショッピングセンターで評�
 date: 2013-05-30T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 Android に新しく搭載された Fused Location Provider、これは GPS/WiFi/センサーを統合的に使ってその時ベストな位置を取得できるというもので、[Google I/O のデモ](http://www.youtube.com/watch?feature=player_detailpage&v=URcVZybzMUI#t=733s) が衝撃的だったので、自分でも試してみました。
 <!--more-->

@@ -5,7 +5,7 @@ date: 2013-09-29T00:00:00.000+09:00
 tags:
   - Android
   - Java
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 Google Map Android API v2 では、指定した範囲にいいかんじにズームしてくれるメソッドがあって（これを使うと下記事のようなことができる）、とても便利なのですが、普通に使ってたら落ちました（泣
 <!--more-->

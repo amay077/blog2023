@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - VisualStudio
-  - AndroidStudio
+  - android-studio
 ---
 「『Android のエミュレータは遅い』という常識はもう古い」と言われてもう数年経ってる気がしますが HAXM エミュレータの普及率、どのくらいなんでしょう？
 

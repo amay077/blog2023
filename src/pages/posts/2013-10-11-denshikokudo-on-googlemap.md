@@ -4,7 +4,7 @@ title: Googleマップ禁止令が出たのなら、地理院地図をGoogleマ�
 date: 2013-10-11T00:00:00.000+09:00
 tags:
   - Geo
-  - GoogleMapsAPI
+  - google-maps-api
   - JavaScript
   - HTML
 ---

@@ -6,7 +6,7 @@ tags:
   - iOS
   - Android
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
 ---
 [Xamarin Advent Calendar 2016 "その1"](http://qiita.com/advent-calendar/2016/xamarin) の初日です。今年もよろしくお願いします。
 <!--more-->

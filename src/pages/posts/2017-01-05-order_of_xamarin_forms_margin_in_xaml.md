@@ -4,7 +4,7 @@ title: Xamarin.Forms XAML で、Margin の上下左右の順番
 date: 2017-01-05T00:00:00.000+09:00
 tags:
   - Xamarin
-  - Xamarin.Forms
+  - xamarin-forms
   - XAML
 ---
 Xamarin.Forms の XAML で マージン(Margin)やパディング(Padding)を書くとき、上下左右の順番がわからなくなるのでメモ。

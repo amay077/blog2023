@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - iOS
   - csharp
-  - ReactiveExtensions
+  - reactive-extensions
 ---
 Reactive Extensions の ``FromEventPattern`` を使うと、イベントを ``IObservable`` に変換できて、複数のイベントに時系列な関係を与えたり、他のストリーム処理とシームレスに扱えたりします。
 <!--more-->

@@ -4,7 +4,7 @@ title: GitHub Actions で Permission denied (publickey) が出ていたので直
 date: 2022-07-08T00:00:00.000Z
 tags:
   - GitHub
-  - GitHub Actions
+  - github-actions
 ---
 
 このブログは Github Pages でホストしていて、ソースの repo からホスト用の repo に GitHub Actions で push することでデプロイする仕組みになっている。

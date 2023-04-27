@@ -4,7 +4,7 @@ title: 地理院地図の標高タイル(CSV)を描画してみた
 date: 2013-11-05T00:00:00.000+09:00
 tags:
   - Geo
-  - GoogleMapsAPI
+  - google-maps-api
   - HTML5
   - JavaScript
 ---

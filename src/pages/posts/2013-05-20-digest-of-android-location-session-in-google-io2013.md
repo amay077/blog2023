@@ -4,7 +4,7 @@ title: Google I/O 2013 の Android Location セッションまとめ
 date: 2013-05-20T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 これは、[Google I/O 2013 - Beyond the Blue Dot: New Features in Android Location - YouTube](http://www.youtube.com/watch?v=URcVZybzMUI) から主要な部分を切り出して勝手な解説を加えたものです。
 <!--more-->

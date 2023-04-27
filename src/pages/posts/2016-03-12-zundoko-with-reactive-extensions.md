@@ -7,7 +7,7 @@ tags:
   - ReactiveX
   - ズンドコキヨシ
   - dotnet
-  - ReactiveExtensions
+  - reactive-extensions
 ---
 
 流行り？に乗っていくスタイル。

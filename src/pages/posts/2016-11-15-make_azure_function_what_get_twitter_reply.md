@@ -5,9 +5,9 @@ date: 2016-11-14T00:00:00.000+09:00
 tags:
   - Azure
   - Node.js
-  - AzureFunctions
+  - azure-functions
   - JavaScript
-  - VisualStudioCode
+  - vscode
 ---
 BOT Framework とか使えよｗ というものですが、 Twitter の自動応答BOTをWebAPI化してみたかったんですね。
 

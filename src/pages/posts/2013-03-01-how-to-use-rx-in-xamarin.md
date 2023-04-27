@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - Android
   - csharp
-  - ReactiveExtensions
+  - reactive-extensions
 ---
 なんか一気にハードル上がったような。。。
 <!-- more -->

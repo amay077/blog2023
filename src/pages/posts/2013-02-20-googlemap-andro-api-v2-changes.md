@@ -4,7 +4,7 @@ title: Google Maps Android API v2 の v1 からの変更点メモ
 date: 2012-12-20T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 [Android の Map API が刷新](http://www.atmarkit.co.jp/ait/articles/1212/04/news110.html)され、
 

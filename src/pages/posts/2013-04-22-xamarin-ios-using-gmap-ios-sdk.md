@@ -6,7 +6,7 @@ tags:
   - Xamarin
   - csharp
   - iOS
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 Googleマップの iOS版とともに公開された [iOS用のMaps SDK](https://developers.google.com/maps/documentation/ios/) ですが、Xamarin.iOS でも使うことができます。(ちなみに Android用の Google Maps API v2 を Xamarin.Android で使う方法は[以前](http://amay077.github.io/blog/2013/03/05/xamarin-android-using-google-maps-android-api-v2/)書きました。)
 <!--more-->

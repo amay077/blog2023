@@ -4,7 +4,7 @@ title: Google Maps JavaScript API を使うときには必ず region の設定�
 date: 2017-08-21T00:00:00.000+09:00
 tags:
   - JavaScript
-  - GoogleMapsAPI
+  - google-maps-api
 ---
 3年くらい前に
 <!--more-->

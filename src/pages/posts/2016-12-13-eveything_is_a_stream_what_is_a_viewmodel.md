@@ -5,7 +5,7 @@ date: 2016-12-13T00:00:00.000+09:00
 tags:
   - RxJava
   - Android
-  - DataBinding
+  - data-binding
   - MVVM
 ---
 [RxJava Advent Calendar 2016](http://qiita.com/advent-calendar/2016/rxjava) 13日目 です。

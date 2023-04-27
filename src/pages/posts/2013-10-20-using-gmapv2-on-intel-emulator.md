@@ -4,7 +4,7 @@ title: 爆速エミュレータで Google Maps Android API v2 を動かす
 date: 2013-10-20T00:00:00.000+09:00
 tags:
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
   - Geo
 ---
 Google APIs のエミュレータで Google Map Android API v2 が動くようになったのですが、やっぱり遅い、使えん。

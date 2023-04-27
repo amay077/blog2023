@@ -5,7 +5,7 @@ date: 2013-05-27T00:00:00.000+09:00
 tags:
   - Xamarin
   - Android
-  - GoogleMapsAPI
+  - google-maps-api
   - csharp
 ---
 Xamarin.Android は [Java ライブラリから C# のラッパを生成する機能](http://docs.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar) がとっても強力(Binding というみたい)なので、Fused Location Provider や Geofencing など、Google I/O 2013 で発表された新機能が入った google-play-service.jar も使えるはずだ、と思い試してみました。
