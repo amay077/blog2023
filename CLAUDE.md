@@ -33,6 +33,18 @@ tags:
 ---
 ```
 
+### 執筆モデルの記録（AI が執筆した記事のみ）
+
+AI が記事を執筆した場合、frontmatter に執筆モデルの ID を `generatedBy` として記録する。テンプレートはこのフィールドを参照しないため、記事には表示されない（不可視）。
+
+```yaml
+generatedBy: opencode-go/deepseek-v4.1-flash
+```
+
+- 書式: `{provider}/{model-id}`（例: `opencode-go/deepseek-v4.1-flash`）
+- 人間が書いた記事には付けない
+- 著者が校正・加筆した場合も、執筆したモデルを記録する
+
 ### タグ規約
 
 タグは URL に使用されるため **kebab-case（小文字・ハイフン区切り）** で統一する。
